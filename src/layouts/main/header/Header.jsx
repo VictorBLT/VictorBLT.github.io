@@ -19,16 +19,16 @@ export default function Header() {
                 </div>
                 <ul>
                     <li>
-                        <a href="/#about">{t('about.title.short')}</a>
+                        <a href={`${import.meta.env.BASE_URL}/#about`}>{t('about.title.short')}</a>
                     </li>
                     <li>
-                        <a href="/#experiences">{t('experiences.title.short')}</a>
+                        <a href={`${import.meta.env.BASE_URL}/#experiences`}>{t('experiences.title.short')}</a>
                     </li>
                     <li>
-                        <a href="/#skills">{t('skills.title.short')}</a>
+                        <a href={`${import.meta.env.BASE_URL}/#skills`}>{t('skills.title.short')}</a>
                     </li>
                     <li>
-                        <a href="/#portfolio">{t('projects.title.short')}</a>
+                        <a href={`${import.meta.env.BASE_URL}/#portfolio`}>{t('projects.title.short')}</a>
                     </li>
                 </ul>
             </nav>
