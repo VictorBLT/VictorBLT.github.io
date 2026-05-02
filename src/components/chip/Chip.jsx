@@ -7,7 +7,11 @@ export default function Chip({ skill }) {
 
     return (
         <div className="chip">
-            <img src={skill.icon} alt={t('alt.logo', { name: skill.name })} draggable={false} />
+            <img
+                src={`${import.meta.env.BASE_URL}${skill.icon}`}
+                alt={t('alt.logo', { name: skill.name })}
+                draggable={false}
+            />
             <p>{skill.name}</p>
         </div>
     );

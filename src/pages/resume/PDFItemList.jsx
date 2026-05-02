@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 export default function PDFItemList({ src, text }) {
     return (
         <View style={styles.container}>
-            <Image style={styles.icon} src={src} />
+            <Image style={styles.icon} src={`${import.meta.env.BASE_URL}${src}`} />
             <Text style={styles.p}>{text}</Text>
         </View>
     );

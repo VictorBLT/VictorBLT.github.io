@@ -11,7 +11,7 @@ export default function Card({ project }) {
         <div className="card">
             <div className="card-image-container">
                 <img
-                    src={project.image}
+                    src={`${import.meta.env.BASE_URL}${project.image}`}
                     alt={t('alt.image', { name: project.name })}
                     draggable={false}
                 />

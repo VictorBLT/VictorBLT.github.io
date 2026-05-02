@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
 export default function PDFChip({ skill, isBadgeEnabled = true, isTextEnabled = true }) {
     return (
         <View style={styles.chip}>
-            {isBadgeEnabled && <Image style={styles.badge} src={skill.icon} />}
+            {isBadgeEnabled && (
+                <Image style={styles.badge} src={`${import.meta.env.BASE_URL}${skill.icon}`} />
+            )}
             {isTextEnabled && <Text style={styles.p}>{skill.name}</Text>}
         </View>
     );

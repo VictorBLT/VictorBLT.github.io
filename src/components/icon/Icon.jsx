@@ -9,7 +9,11 @@ export default function Icon({ skill }) {
     return (
         <Tooltip title={skill.name} enterTouchDelay={0}>
             <div className="icon">
-                <img src={skill.icon} alt={t('alt.logo', { name: skill.name })} draggable={false} />
+                <img
+                    src={`${import.meta.env.BASE_URL}${skill.icon}`}
+                    alt={t('alt.logo', { name: skill.name })}
+                    draggable={false}
+                />
             </div>
         </Tooltip>
     );

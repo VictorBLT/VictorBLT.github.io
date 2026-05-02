@@ -3,6 +3,7 @@ import './about.css';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
+import profilePic from '../../../public/images/vic.png';
 import Resume from '../resume/Resume.jsx';
 
 export default function About() {
@@ -13,7 +14,7 @@ export default function About() {
             <div className="horizontal-container">
                 <div className="image-container">
                     <img
-                        src="./images/vic.png"
+                        src={profilePic}
                         alt={t('about.picture', {
                             name: t('name'),
                             title: t('title'),

@@ -1,6 +1,7 @@
 import { Image, Link, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
+import profilePic from '../../../public/images/vic.png';
 import PDFItemList from './PDFItemList.jsx';
 import PDFSection from './PDFSection.jsx';
 import styles from './ResumeStyle.jsx';
@@ -12,7 +13,7 @@ export default function ResumeProfile() {
         <>
             <View style={styles.imgContainer}>
                 <View style={styles.circleBackground} />
-                <Image style={styles.profileImage} src="./images/vic.png" />
+                <Image style={styles.profileImage} src={profilePic} />
             </View>
             <PDFSection title={t('resume.profile.title')}>
                 <PDFItemList src={'/icons/location.svg'} text={t('resume.profile.location')} />
