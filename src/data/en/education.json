@@ -1,0 +1,29 @@
+{
+    "title": {
+        "long": "My Education",
+        "resume": "Education"
+    },
+    "items": [
+        {
+            "title": "Master's Degree in Computer Science Engineering",
+            "location": "Polytech Nantes, France",
+            "start": "2023-09-01",
+            "end": "2026-07-01",
+            "description": "Expertise in software engineering, advanced algorithms, artificial intelligence, and data science. Managing large-scale projects using Agile methods."
+        },
+        {
+            "title": "Exchange Studies in Computer Science",
+            "location": "Umeå Universitet, Sweden",
+            "start": "2025-09-01",
+            "end": "2026-01-18",
+            "description": "Specialization in Artificial Intelligence (NLP) and algorithmic optimization."
+        },
+        {
+            "title": "Two-year University Degree in Computer Science",
+            "location": "IUT Nantes, France",
+            "start": "2021-09-01",
+            "end": "2023-07-01",
+            "description": "Object-Oriented Programming, relational database design, and systems administration. Development of collaborative Full-Stack web apps using project management methods."
+        }
+    ]
+}

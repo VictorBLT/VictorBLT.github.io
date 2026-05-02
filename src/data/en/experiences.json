@@ -1,0 +1,37 @@
+{
+    "title": {
+        "long": "My Experiences",
+        "short": "Experiences",
+        "resume": "Experiences"
+    },
+    "items": [
+        {
+            "title": "Data Engineer",
+            "location": "Orange Business Services",
+            "start": "2026-02-01",
+            "end": "2026-08-01",
+            "description": ""
+        },
+        {
+            "title": "R&D Software Engineer",
+            "location": "Cantoriel",
+            "start": "2025-05-01",
+            "end": "2025-08-01",
+            "description": "Research and integration of Keycloak IAM solution. Developed OIDC authentication services in Java. Implemented SSO and secured token exchanges using signatures and encryption."
+        },
+        {
+            "title": "Full Stack Developer",
+            "location": "Inserm UMR U1246 SPHERE",
+            "start": "2024-06-01",
+            "end": "2024-07-01",
+            "description": "Designed and developed a web application for monitoring university internships. Built with Laravel and React. Containerized deployment via Docker and enforced Conventional Commits standards."
+        },
+        {
+            "title": "Full Stack Developer",
+            "location": "CHU de Nantes",
+            "start": "2023-04-01",
+            "end": "2023-07-01",
+            "description": "Developed business modules for a biostatistics platform, including a satisfaction survey tool, an internal forum, and a meeting agenda manager. Implemented MVC architecture using CodeIgniter."
+        }
+    ]
+}

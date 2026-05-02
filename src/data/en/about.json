@@ -1,0 +1,10 @@
+{
+    "title": {
+        "long": "About Me",
+        "short": "About"
+    },
+    "picture": "{{name}} - {{title}}",
+    "greetings": "Hi! I'm {{name}}, {{title}}.",
+    "description": "Mon expertise s'étend du développement logiciel aux architectures Web Full-Stack, avec une spécialisation en Data et IA. Rigoureux, je place la qualité du code et les standards industriels au cœur de mes réalisations.",
+    "download": "Download Resume"
+}

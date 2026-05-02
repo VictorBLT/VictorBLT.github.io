@@ -1,0 +1,50 @@
+{
+    "title": {
+        "long": "My Portfolio",
+        "short": "Portfolio",
+        "resume": "Projects"
+    },
+    "projects": [
+        {
+            "name": "Tee Time Heros",
+            "image": "/images/teetimeheros.jpg",
+            "skills": [{ "name": "Node.js", "icon": "/icons/node.svg" }]
+        },
+        {
+            "name": "Music shop",
+            "image": "/images/bda.jpg",
+            "skills": [
+                { "name": "Node.js", "icon": "/icons/node.svg" },
+                { "name": "React", "icon": "/icons/react.svg" },
+                { "name": "MongoDB", "icon": "/icons/mongodb.svg" },
+                { "name": "Docker", "icon": "/icons/docker.svg" }
+            ]
+        },
+        {
+            "name": "AlphaForce",
+            "image": "/images/alphaforce.jpg",
+            "skills": [
+                { "name": "CodeIgniter", "icon": "/icons/codeigniter.svg" },
+                { "name": "PHP", "icon": "/icons/php.svg" },
+                { "name": "MySQL", "icon": "/icons/mysql.svg" }
+            ]
+        },
+        {
+            "name": "Le Jardin des Oiseaux",
+            "image": "/images/ljdo.jpg",
+            "skills": [
+                { "name": "HTML", "icon": "/icons/html.svg" },
+                { "name": "CSS", "icon": "/icons/css.svg" },
+                { "name": "JavaScript", "icon": "/icons/js.svg" }
+            ]
+        },
+        {
+            "name": "Motorsport",
+            "image": "/images/motorsport.jpg",
+            "skills": [
+                { "name": "Unity", "icon": "/icons/unity.svg" },
+                { "name": "C#", "icon": "/icons/csharp.svg" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Victor Blot",
+    "title": "Software Engineer",
+    "linkedin": "victor-blot",
+    "linkedin_url": "https://www.linkedin.com/in/{{username}}",
+    "email": "victor.blot44@gmail.com",
+    "mailto": "mailto:{{email}}",
+    "alt": {
+        "image": "{{name}} image",
+        "logo": "{{name}} logo"
+    },
+    "footer": {
+        "copyright": "© {{year}} {{name}} - All rights reserved"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "title": {
+        "long": "Ma Formation",
+        "resume": "Diplômes et Formations"
+    },
+    "items": [
+        {
+            "title": "Diplôme d’ingénieur Informatique",
+            "location": "Polytech Nantes",
+            "start": "2023-09-01",
+            "end": "2026-07-01",
+            "description": "Expertise en génie logiciel, algorithmes avancés, intelligence artificielle et data science. Pilotage de projets d'envergure avec méthodes agiles."
+        },
+        {
+            "title": "Semestre International",
+            "location": "Umeå Universitet, Suède",
+            "start": "2025-09-01",
+            "end": "2026-01-18",
+            "description": "Spécialisation en intelligence artificielle (NLP) et optimisation algorithmique. Formation intégralement en anglais."
+        },
+        {
+            "title": "DUT Informatique",
+            "location": "IUT Nantes",
+            "start": "2021-09-01",
+            "end": "2023-07-01",
+            "description": "Programmation orientée objet, conception de bases de données relationnelles et administration systèmes. Réalisation de projets web collaboratifs Full-Stack avec méthodes de gestion de projet."
+        }
+    ]
+}

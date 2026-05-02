@@ -1,0 +1,35 @@
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.chips-container .chip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+    background-color: var(--blue-4) !important;
+    padding: 4px 14px;
+    border-radius: 100px;
+    cursor: default;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.chip > img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.chip > p {
+    white-space: nowrap;
+}
+
+@media print {
+    .chips-container .chip {
+        print-color-adjust: exact;
+    }
+}

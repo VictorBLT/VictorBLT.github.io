@@ -1,0 +1,37 @@
+{
+    "title": {
+        "long": "Mes Expériences",
+        "short": "Expériences",
+        "resume": "Expériences Professionnelles"
+    },
+    "items": [
+        {
+            "title": "Data Engineer",
+            "location": "Orange Business Services",
+            "start": "2026-02-01",
+            "end": "2026-08-01",
+            "description": ""
+        },
+        {
+            "title": "Développeur R&D",
+            "location": "Cantoriel",
+            "start": "2025-05-01",
+            "end": "2025-08-01",
+            "description": "Étude et intégration de la solution IAM Keycloak. Développement du service d'authentification OIDC en Java. Mise en œuvre du SSO et sécurisation des flux via signatures et chiffrements de tokens."
+        },
+        {
+            "title": "Développeur Full Stack",
+            "location": "Inserm UMR U1246 SPHERE",
+            "start": "2024-06-01",
+            "end": "2024-07-01",
+            "description": "Conception d'une application web de suivi de stages universitaires. Développement avec Laravel et React. Déploiement conteneurisé via Docker. Respect des standards Conventional Commits."
+        },
+        {
+            "title": "Développeur Full Stack",
+            "location": "CHU de Nantes",
+            "start": "2023-04-01",
+            "end": "2023-07-01",
+            "description": "Développement de modules métiers pour la plateforme de biostatistique: un outil d'enquêtes de satisfaction, un forum interne et un gestionnaire d'ordres du jour de réunions. Architecture MVC avec CodeIgniter."
+        }
+    ]
+}
