@@ -11,6 +11,8 @@ i18n.on('languageChanged', (lng) => {
     dayjs.locale(lng);
 });
 
+const browserLang = navigator.language.split('-')[0];
+
 i18n.use(initReactI18next).init({
     resources: {
         fr: {
@@ -20,7 +22,7 @@ i18n.use(initReactI18next).init({
             translation: enTranslations,
         },
     },
-    lng: 'fr',
+    lng: browserLang,
     fallbackLng: 'en',
     interpolation: {
         escapeValue: false,
