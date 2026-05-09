@@ -17,7 +17,7 @@ export default function Header() {
         <header>
             <nav>
                 <h1>
-                    <a href="/">{t('name')}</a>
+                    <a href={`${baseUrl}/`}>{t('name')}</a>
                 </h1>
                 <input type="checkbox" name="" />
                 <div className="burger-lines">
