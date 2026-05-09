@@ -17,7 +17,7 @@ export default function Header() {
         <header>
             <nav>
                 <h1>
-                    <a href={`${baseUrl}/`}>{t('name')}</a>
+                    <a href={`${baseUrl}`}>{t('name')}</a>
                 </h1>
                 <input type="checkbox" name="" />
                 <div className="burger-lines">
@@ -28,7 +28,7 @@ export default function Header() {
                 <ul>
                     {NAV_LINKS.map(({ id, path, labelKey }) => (
                         <li key={id}>
-                            <a href={`${baseUrl}/${path}`}>{t(labelKey)}</a>
+                            <a href={`${baseUrl}${path}`}>{t(labelKey)}</a>
                         </li>
                     ))}
                 </ul>
