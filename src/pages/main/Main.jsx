@@ -1,20 +1,45 @@
 import './main.css';
 
+import { useTranslation } from 'react-i18next';
+
+import Card from '../../components/card/Card.jsx';
+import Timeline from '../../components/timeline/Timeline.jsx';
 import MainLayout from '../../layouts/main/MainLayout.jsx';
 import About from './About.jsx';
-import Education from './Education.jsx';
-import Experiences from './Experiences.jsx';
-import Portfolio from './Portfolio.jsx';
 import Skills from './Skills.jsx';
+import Title from './Title.jsx';
 
 export default function Main() {
+    const { t } = useTranslation();
+    const experiences = t('experiences.items', { returnObjects: true });
+    const education = t('education.items', { returnObjects: true });
+    const projects = t('projects.items', { returnObjects: true });
+
     return (
         <MainLayout>
             <About />
-            <Experiences />
+            <section id="experiences">
+                <Title>{t('experiences.title.long')}</Title>
+                <div className="timeline-container vertical">
+                    {experiences.length > 0 &&
+                        experiences.map((event, index) => <Timeline key={index} event={event} />)}
+                </div>
+            </section>
             <Skills />
-            <Education />
-            <Portfolio />
+            <section id="education">
+                <Title>{t('education.title.long')}</Title>
+                <div className="timeline-container">
+                    {education.length > 0 &&
+                        education.map((event, index) => <Timeline key={index} event={event} />)}
+                </div>
+            </section>
+            <section id="portfolio">
+                <Title>{t('projects.title.long')}</Title>
+                <div className="card-container">
+                    {projects.length > 0 &&
+                        projects.map((project, index) => <Card key={index} project={project} />)}
+                </div>
+            </section>
         </MainLayout>
     );
 }

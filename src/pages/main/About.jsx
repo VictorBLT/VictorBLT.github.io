@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import profilePic from '../../../public/images/vic.png';
 import Resume from '../resume/Resume.jsx';
+import Title from './Title.jsx';
 
 export default function About() {
     const { t } = useTranslation();
@@ -23,10 +24,7 @@ export default function About() {
                     />
                 </div>
                 <div className="vertical-container">
-                    <h1>
-                        <span className="accent">{'//'}</span>
-                        {t('about.title.long')}
-                    </h1>
+                    <Title>{t('about.title.long')}</Title>
                     <p className="description">{`${t('about.greetings', {
                         name: t('name'),
                         title: t('title'),

@@ -5,6 +5,6 @@
     },
     "picture": "{{name}} - {{title}}",
     "greetings": "Hi! I'm {{name}}, {{title}}.",
-    "description": "Mon expertise s'étend du développement logiciel aux architectures Web Full-Stack, avec une spécialisation en Data et IA. Rigoureux, je place la qualité du code et les standards industriels au cœur de mes réalisations.",
+    "description": "My expertise spans software development to full-stack web architectures, with a specialization in Data and AI. Rigorous and detail-oriented, I place code quality and industry standards at the heart of everything I build.",
     "download": "Download Resume"
 }

@@ -5,12 +5,13 @@ import { useTranslation } from 'react-i18next';
 
 export default function Icon({ skill }) {
     const { t } = useTranslation();
+    const baseUrl = import.meta.env.BASE_URL;
 
     return (
         <Tooltip title={skill.name} enterTouchDelay={0}>
             <div className="icon">
                 <img
-                    src={`${import.meta.env.BASE_URL}${skill.icon}`}
+                    src={`${baseUrl}${skill.icon}`}
                     alt={t('alt.logo', { name: skill.name })}
                     draggable={false}
                 />

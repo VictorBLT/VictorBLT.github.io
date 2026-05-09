@@ -1,24 +1,16 @@
 {
     "file": "Resume {{name}}",
     "profile": {
-        "title": {
-            "resume": "Profile"
-        },
-        "items": {
-            "location": "Nantes, France",
-            "driver": "Driver license"
-        }
+        "title": "Profile",
+        "location": "Nantes, France",
+        "driver": "Driver license"
     },
     "languages": {
-        "title": {
-            "resume": "Languages"
-        },
+        "title": "Languages",
         "items": [{ "name": "English (Toeic: 900/990)", "icon": "/icons/english.svg" }]
     },
     "hobbies": {
-        "title": {
-            "resume": "Hobbies"
-        },
+        "title": "Hobbies",
         "items": [
             { "name": "Cars", "icon": "/icons/car.svg" },
             { "name": "Photo / Video", "icon": "/icons/photo.svg" },

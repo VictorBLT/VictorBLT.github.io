@@ -4,7 +4,7 @@
         "short": "Portfolio",
         "resume": "Projects"
     },
-    "projects": [
+    "items": [
         {
             "name": "Tee Time Heros",
             "image": "/images/teetimeheros.jpg",

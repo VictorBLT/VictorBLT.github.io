@@ -3,6 +3,7 @@ import './skills.css';
 import { useTranslation } from 'react-i18next';
 
 import Chip from '../../components/chip/Chip.jsx';
+import Title from './Title.jsx';
 
 export default function Skills() {
     const { t } = useTranslation();
@@ -10,10 +11,7 @@ export default function Skills() {
 
     return (
         <section id="skills">
-            <h1>
-                <span className="accent">{'//'}</span>
-                {t('skills.title.long')}
-            </h1>
+            <Title>{t('skills.title.long')}</Title>
             <div className="skills-categories-container">
                 {data.map((category, index) => (
                     <div key={index} className="skill-category">

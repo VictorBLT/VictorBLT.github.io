@@ -6,12 +6,13 @@ import Badge from '../badge/Badge.jsx';
 
 export default function Card({ project }) {
     const { t } = useTranslation();
+    const baseUrl = import.meta.env.BASE_URL;
 
     return (
         <div className="card">
             <div className="card-image-container">
                 <img
-                    src={`${import.meta.env.BASE_URL}${project.image}`}
+                    src={`${baseUrl}${project.image}`}
                     alt={t('alt.image', { name: project.name })}
                     draggable={false}
                 />
