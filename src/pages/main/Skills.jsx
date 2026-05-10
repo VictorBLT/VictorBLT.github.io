@@ -3,7 +3,6 @@ import './skills.css';
 import { useTranslation } from 'react-i18next';
 
 import Chip from '../../components/chip/Chip.jsx';
-import Title from './Title.jsx';
 import Title from '../../components/title/Title.jsx';
 
 export default function Skills() {
