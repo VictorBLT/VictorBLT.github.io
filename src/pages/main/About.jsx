@@ -4,8 +4,8 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 import profilePic from '../../../public/images/vic.png';
+import Title from '../../components/title/Title.jsx';
 import Resume from '../resume/Resume.jsx';
-import Title from './Title.jsx';
 
 export default function About() {
     const { t } = useTranslation();
@@ -25,7 +25,7 @@ export default function About() {
                 </div>
                 <div className="vertical-container">
                     <Title>{t('about.title.long')}</Title>
-                    <p className="description">{`${t('about.greetings', {
+                    <p>{`${t('about.greetings', {
                         name: t('name'),
                         title: t('title'),
                     })} ${t('about.description')}`}</p>

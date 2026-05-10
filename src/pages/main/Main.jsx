@@ -1,13 +1,11 @@
-import './main.css';
-
 import { useTranslation } from 'react-i18next';
 
 import Card from '../../components/card/Card.jsx';
 import Timeline from '../../components/timeline/Timeline.jsx';
+import Title from '../../components/title/Title.jsx';
 import MainLayout from '../../layouts/main/MainLayout.jsx';
 import About from './About.jsx';
 import Skills from './Skills.jsx';
-import Title from './Title.jsx';
 
 export default function Main() {
     const { t } = useTranslation();

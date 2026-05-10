@@ -1,3 +1,15 @@
+#about .horizontal-container {
+    display: flex;
+    gap: 60px;
+}
+
+#about .vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
 #about .image-container {
     max-width: 180px;
     width: 100%;
@@ -33,6 +45,19 @@
 }
 
 @media screen and (max-width: 800px) {
+    #about .horizontal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .vertical-container {
+        align-items: center;
+    }
+
+    #about .vertical-container p {
+        text-align: center;
+    }
+
     #about .image-container {
         max-width: 220px;
         margin-left: 0;
@@ -40,6 +65,19 @@
 }
 
 @media print {
+    #about .horizontal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .vertical-container {
+        align-items: center;
+    }
+
+    #about .vertical-container p {
+        text-align: center;
+    }
+
     #about .image-container {
         max-width: 220px;
         margin-left: 0;

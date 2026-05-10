@@ -93,6 +93,12 @@ main section:nth-of-type(2n) {
     background-color: var(--blue-4);
 }
 
+main section > div {
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+}
+
 @media print {
     section {
         page-break-after: always;
