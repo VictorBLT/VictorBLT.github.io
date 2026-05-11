@@ -100,7 +100,7 @@
     grid-area: description;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .timeline-container {
         flex-direction: column;
         gap: 0;

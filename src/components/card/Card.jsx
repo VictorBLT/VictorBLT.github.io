@@ -2,7 +2,7 @@ import './card.css';
 
 import { useTranslation } from 'react-i18next';
 
-import Badge from '../badge/Badge.jsx';
+import Chip from '../chip/Chip.jsx';
 
 export default function Card({ project }) {
     const { t } = useTranslation();
@@ -18,10 +18,13 @@ export default function Card({ project }) {
                 />
             </div>
             <div className="card-content">
-                <h2>{project.name}</h2>
-                <div className="badges-container">
+                <div className="card-text">
+                    <h2>{project.name}</h2>
+                    <p>{project.description}</p>
+                </div>
+                <div className="chips-container">
                     {project.skills.map((skill, index) => (
-                        <Badge key={index} skill={skill} isTextEnabled={false} />
+                        <Chip key={index} skill={skill} />
                     ))}
                 </div>
             </div>

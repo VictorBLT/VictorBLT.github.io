@@ -33,7 +33,7 @@ header nav ul {
 header a {
     color: var(--blue-1);
     text-decoration: none;
-    transition: all ease-in-out 125ms;
+    transition: all ease 125ms;
 }
 
 header a:hover {
@@ -70,7 +70,7 @@ header a:hover {
 
     header nav input[type='checkbox'] ~ ul li a {
         opacity: 0;
-        transition: all 200ms ease-in-out;
+        transition: all 200ms ease;
     }
 
     header nav input[type='checkbox']:checked ~ ul li a {
@@ -105,7 +105,7 @@ header a:hover {
         width: 100%;
         border-radius: 10px;
         background-color: var(--blue-1);
-        transition: transform 0.4s ease-in-out;
+        transition: transform 0.4s ease;
     }
 
     header nav .burger-lines span:nth-child(1) {
@@ -113,7 +113,7 @@ header a:hover {
     }
 
     header nav .burger-lines span:nth-child(2) {
-        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease;
     }
 
     header nav .burger-lines span:nth-child(3) {

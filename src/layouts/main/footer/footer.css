@@ -22,7 +22,7 @@ footer .socials {
     height: 60px;
     border-radius: 100%;
     border: solid 2px var(--blue-3);
-    transition: all ease-in-out 125ms;
+    transition: all ease 125ms;
 }
 
 .socials .social-icon:hover {
@@ -30,7 +30,7 @@ footer .socials {
 }
 
 .socials .social-icon svg {
-    transition: all ease-in-out 125ms;
+    transition: all ease 125ms;
     fill: var(--blue-3);
 }
 

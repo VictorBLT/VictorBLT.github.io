@@ -39,7 +39,7 @@
     height: 94%;
     background-color: var(--accent) !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
-    print-color-adjust: exact !important;
+    print-color-adjust: exact;
     border-radius: 50%;
     z-index: -1;
 }
