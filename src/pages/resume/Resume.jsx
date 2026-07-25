@@ -1,8 +1,7 @@
 import { Document, Page } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
-import ResumeMain from './ResumeMain.jsx';
-import ResumeSidebar from './ResumeSidebar.jsx';
+import ResumeFR from './ResumeFR.jsx';
 import styles from './ResumeStyle.jsx';
 
 export default function Resume() {
@@ -15,8 +14,7 @@ export default function Resume() {
             creator={t('name')}
             producer={'Portfolio'}>
             <Page size="A4" style={styles.page}>
-                <ResumeSidebar />
-                <ResumeMain />
+                <ResumeFR />
             </Page>
         </Document>
     );
