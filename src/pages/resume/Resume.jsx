@@ -2,10 +2,22 @@ import { Document, Page } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 import ResumeFR from './ResumeFR.jsx';
+import ResumeEN from './ResumeEN.jsx';
 import styles from './ResumeStyle.jsx';
 
 export default function Resume() {
-    const { t } = useTranslation();
+    const { i18n, t } = useTranslation();
+
+    const renderResume = () => {
+        const currentLang = i18n.language ? i18n.language.substring(0, 2).toLowerCase() : 'en';
+        switch (currentLang) {
+            case 'fr':
+                return <ResumeFR />;
+            case 'en':
+            default:
+                return <ResumeEN />;
+        }
+    };
 
     return (
         <Document
@@ -14,7 +26,7 @@ export default function Resume() {
             creator={t('name')}
             producer={'Portfolio'}>
             <Page size="A4" style={styles.page}>
-                <ResumeFR />
+                {renderResume()}
             </Page>
         </Document>
     );
