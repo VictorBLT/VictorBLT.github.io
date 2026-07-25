@@ -4,8 +4,8 @@ import dayjs from 'dayjs';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import enTranslations from './data/en';
-import frTranslations from './data/fr';
+import enTranslations from './i18n/en';
+import frTranslations from './i18n/fr';
 
 i18n.on('languageChanged', (lng) => {
     dayjs.locale(lng);
