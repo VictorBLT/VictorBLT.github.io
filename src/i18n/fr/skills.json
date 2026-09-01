@@ -8,42 +8,42 @@
         {
             "name": "Langages",
             "items": [
-                { "name": "C++", "icon": "/icons/cpp.svg" },
-                { "name": "C#", "icon": "/icons/csharp.svg" },
-                { "name": "Kotlin", "icon": "/icons/kotlin.svg" },
-                { "name": "Java", "icon": "/icons/java.svg" },
-                { "name": "Golang", "icon": "/icons/go.svg" },
-                { "name": "Python", "icon": "/icons/python.svg" },
-                { "name": "Arduino", "icon": "/icons/arduino.svg" }
+                { "name": "C++", "icon": "icons/cpp.svg" },
+                { "name": "C#", "icon": "icons/csharp.svg" },
+                { "name": "Kotlin", "icon": "icons/kotlin.svg" },
+                { "name": "Java", "icon": "icons/java.svg" },
+                { "name": "Golang", "icon": "icons/go.svg" },
+                { "name": "Python", "icon": "icons/python.svg" },
+                { "name": "Arduino", "icon": "icons/arduino.svg" }
             ]
         },
         {
             "name": "Web",
             "items": [
-                { "name": "JavaScript", "icon": "/icons/js.svg" },
-                { "name": "PHP", "icon": "/icons/php.svg" },
-                { "name": "Laravel", "icon": "/icons/laravel.svg" },
-                { "name": "CodeIgniter", "icon": "/icons/codeigniter.svg" },
-                { "name": "Node.js", "icon": "/icons/node.svg" },
-                { "name": "React", "icon": "/icons/react.svg" }
+                { "name": "JavaScript", "icon": "icons/js.svg" },
+                { "name": "PHP", "icon": "icons/php.svg" },
+                { "name": "Laravel", "icon": "icons/laravel.svg" },
+                { "name": "CodeIgniter", "icon": "icons/codeigniter.svg" },
+                { "name": "Node.js", "icon": "icons/node.svg" },
+                { "name": "React", "icon": "icons/react.svg" }
             ]
         },
         {
             "name": "Data & IA",
             "items": [
-                { "name": "PyTorch", "icon": "/icons/pytorch.svg" },
-                { "name": "Spark", "icon": "/icons/spark.svg" },
-                { "name": "Kafka", "icon": "/icons/kafka.svg" },
-                { "name": "MySQL", "icon": "/icons/mysql.svg" },
-                { "name": "MongoDB", "icon": "/icons/mongodb.svg" }
+                { "name": "PyTorch", "icon": "icons/pytorch.svg" },
+                { "name": "Spark", "icon": "icons/spark.svg" },
+                { "name": "Kafka", "icon": "icons/kafka.svg" },
+                { "name": "MySQL", "icon": "icons/mysql.svg" },
+                { "name": "MongoDB", "icon": "icons/mongodb.svg" }
             ]
         },
         {
             "name": "DevOps",
             "items": [
-                { "name": "GIT", "icon": "/icons/git.svg" },
-                { "name": "Docker", "icon": "/icons/docker.svg" },
-                { "name": "Gitlab CI", "icon": "/icons/gitlab.svg" }
+                { "name": "GIT", "icon": "icons/git.svg" },
+                { "name": "Docker", "icon": "icons/docker.svg" },
+                { "name": "Gitlab CI", "icon": "icons/gitlab.svg" }
             ]
         }
     ]

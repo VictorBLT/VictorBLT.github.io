@@ -8,47 +8,47 @@
         {
             "name": "Tee Time Heros",
             "description": "Une expérience interactive ludique autour du golf crée lors du Hackathon Hyblab pour Ouest-France.",
-            "image": "/images/teetimeheros.jpg",
-            "skills": [{ "name": "Node.js", "icon": "/icons/node.svg" }]
+            "image": "images/teetimeheros.jpg",
+            "skills": [{ "name": "Node.js", "icon": "icons/node.svg" }]
         },
         {
             "name": "Bureau des Arts",
             "description": "Web App de gestion de parc matériel et suivi des emprunts pour une association musicale étudiante.",
-            "image": "/images/bda.jpg",
+            "image": "images/bda.jpg",
             "skills": [
-                { "name": "Node.js", "icon": "/icons/node.svg" },
-                { "name": "React", "icon": "/icons/react.svg" },
-                { "name": "MongoDB", "icon": "/icons/mongodb.svg" },
-                { "name": "Docker", "icon": "/icons/docker.svg" }
+                { "name": "Node.js", "icon": "icons/node.svg" },
+                { "name": "React", "icon": "icons/react.svg" },
+                { "name": "MongoDB", "icon": "icons/mongodb.svg" },
+                { "name": "Docker", "icon": "icons/docker.svg" }
             ]
         },
         {
             "name": "AlphaForce",
             "description": "Simulation de boutique en ligne d'équipements sportifs.",
-            "image": "/images/alphaforce.jpg",
+            "image": "images/alphaforce.jpg",
             "skills": [
-                { "name": "CodeIgniter", "icon": "/icons/codeigniter.svg" },
-                { "name": "PHP", "icon": "/icons/php.svg" },
-                { "name": "MySQL", "icon": "/icons/mysql.svg" }
+                { "name": "CodeIgniter", "icon": "icons/codeigniter.svg" },
+                { "name": "PHP", "icon": "icons/php.svg" },
+                { "name": "MySQL", "icon": "icons/mysql.svg" }
             ]
         },
         {
             "name": "Le Jardin des Oiseaux",
             "description": "Site vitrine responsive pour la présentation du catalogue d'une pépinière locale.",
-            "image": "/images/ljdo.jpg",
+            "image": "images/ljdo.jpg",
             "skills": [
-                { "name": "HTML", "icon": "/icons/html.svg" },
-                { "name": "CSS", "icon": "/icons/css.svg" },
-                { "name": "JavaScript", "icon": "/icons/js.svg" }
+                { "name": "HTML", "icon": "icons/html.svg" },
+                { "name": "CSS", "icon": "icons/css.svg" },
+                { "name": "JavaScript", "icon": "icons/js.svg" }
             ]
         },
         {
             "name": "Motorsport",
             "description": "Jeu de simulation automobile 3D avec un moteur physique avancé.",
-            "image": "/images/motorsport.jpg",
+            "image": "images/motorsport.jpg",
             "skills": [
-                { "name": "Unity", "icon": "/icons/unity.svg" },
-                { "name": "C#", "icon": "/icons/csharp.svg" }
+                { "name": "Unity", "icon": "icons/unity.svg" },
+                { "name": "C#", "icon": "icons/csharp.svg" }
             ]
         }
     ]

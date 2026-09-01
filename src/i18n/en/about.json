@@ -1,7 +1,8 @@
 {
     "title": {
         "long": "About Me",
-        "short": "About"
+        "short": "About",
+        "resume": "Summary"
     },
     "picture": "{{name}} - {{title}}",
     "greetings": "Hi! I'm {{name}}, {{title}}.",

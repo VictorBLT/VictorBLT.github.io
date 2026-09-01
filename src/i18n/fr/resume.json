@@ -7,15 +7,15 @@
     },
     "languages": {
         "title": "Langues",
-        "items": [{ "name": "Anglais (Toeic: 900/990)", "icon": "/icons/english.svg" }]
+        "items": [{ "name": "Anglais (Toeic: 900/990)", "icon": "icons/english.svg" }]
     },
     "hobbies": {
         "title": "Loisirs",
         "items": [
-            { "name": "Automobile", "icon": "/icons/car.svg" },
-            { "name": "Photo / Vidéo", "icon": "/icons/photo.svg" },
-            { "name": "Voyages", "icon": "/icons/travel.svg" },
-            { "name": "Musique", "icon": "/icons/music.svg" }
+            { "name": "Automobile", "icon": "icons/car.svg" },
+            { "name": "Photo / Vidéo", "icon": "icons/photo.svg" },
+            { "name": "Voyages", "icon": "icons/travel.svg" },
+            { "name": "Musique", "icon": "icons/music.svg" }
         ]
     }
 }

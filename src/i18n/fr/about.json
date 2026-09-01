@@ -1,7 +1,8 @@
 {
     "title": {
         "long": "Qui suis-je ?",
-        "short": "Présentation"
+        "short": "Présentation",
+        "resume": "Présentation"
     },
     "picture": "{{name}} - {{title}}",
     "greetings": "Bonjour ! Je suis {{name}}, {{title}}.",
