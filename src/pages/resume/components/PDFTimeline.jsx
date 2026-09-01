@@ -1,17 +1,16 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import {styles, theme} from '../ResumeStyle.jsx'
 import dayjs from 'dayjs';
 
-const styles = StyleSheet.create({
+const localStyles = StyleSheet.create({
     timeline: {
         flexDirection: 'row',
+        width: '100%',
     },
     dateColumn: {
         width: 50,
     },
     date: {
-        color: '#141C3A',
-        fontWeight: 300,
-        fontSize: 10,
         textAlign: 'right',
         textTransform: 'capitalize',
         lineHeight: 1.4,
@@ -24,13 +23,13 @@ const styles = StyleSheet.create({
         width: 6,
         height: 6,
         marginTop: 4,
-        backgroundColor: '#00ADB5',
+        backgroundColor: theme.colors.accent,
         borderRadius: 50,
     },
     bar: {
         width: 1,
         marginTop: 8,
-        backgroundColor: '#DCDCDE',
+        backgroundColor: theme.colors.blue3,
         flexGrow: 1,
     },
     contentColumn: {
@@ -40,41 +39,32 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
     },
     title: {
-        color: '#141C3A',
-        fontWeight: 400,
-        fontSize: 12,
         marginBottom: 1.5,
     },
     location: {
-        color: '#535E88',
-        fontWeight: 300,
-        fontSize: 10,
         fontStyle: 'italic',
         marginBottom: 4,
     },
     description: {
-        color: '#535E88',
-        fontWeight: 300,
-        fontSize: 9,
         lineHeight: 1.3,
     },
 });
 
 export default function PDFTimeline({ event, isLast, isDetailed = true }) {
     return (
-        <View style={styles.timeline}>
-            <View style={styles.dateColumn}>
-                <Text style={styles.date}>{dayjs(event.start).format('MMM YYYY')}</Text>
-                <Text style={styles.date}>{dayjs(event.end).format('MMM YYYY')}</Text>
+        <View style={localStyles.timeline}>
+            <View style={localStyles.dateColumn}>
+                <Text style={[styles.h3, localStyles.date]}>{dayjs(event.start).format('MMM YYYY')}</Text>
+                <Text style={[styles.h3, localStyles.date]}>{dayjs(event.end).format('MMM YYYY')}</Text>
             </View>
-            <View style={styles.barColumn}>
-                <View style={styles.dot} />
-                {!isLast && <View style={styles.bar} />}
+            <View style={localStyles.barColumn}>
+                <View style={localStyles.dot} />
+                {!isLast && <View style={localStyles.bar} />}
             </View>
-            <View style={[styles.contentColumn, !isLast && styles.paddingContentColumn]}>
-                <Text style={styles.title}>{event.title}</Text>
-                <Text style={styles.location}>{event.location}</Text>
-                {isDetailed && <Text style={styles.description}>{event.description}</Text>}
+            <View style={[localStyles.contentColumn, !isLast && localStyles.paddingContentColumn]}>
+                <Text style={[styles.h2, localStyles.title]}>{event.title}</Text>
+                <Text style={[styles.h4, localStyles.location]}>{event.location}</Text>
+                {isDetailed && <Text style={[styles.p, localStyles.description]}>{event.description}</Text>}
             </View>
         </View>
     );

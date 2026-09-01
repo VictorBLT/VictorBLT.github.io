@@ -1,24 +1,18 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import {styles, theme} from '../ResumeStyle.jsx'
 
-const styles = StyleSheet.create({
+const localStyles = StyleSheet.create({
     title: {
         flexDirection: 'row',
         alignItems: 'left',
         gap: 6,
         paddingBottom: 3,
         borderBottomWidth: 1,
-        borderBottomColor: '#DCDCDE',
+        borderBottomColor: theme.colors.blue3,
         marginBottom: 8,
     },
     slash: {
-        color: '#00ADB5',
-        fontSize: 16,
-        fontWeight: 900,
-    },
-    h1: {
-        color: '#141C3A',
-        fontWeight: 900,
-        fontSize: 16,
+        color: theme.colors.accent,
     },
     container: {
         gap: 5,
@@ -28,11 +22,11 @@ const styles = StyleSheet.create({
 export default function PDFSection({ title, children }) {
     return (
         <View>
-            <View style={styles.title}>
-                <Text style={styles.slash}>{`//`}</Text>
+            <View style={localStyles.title}>
+                <Text style={[styles.h1, localStyles.slash]}>{`//`}</Text>
                 <Text style={styles.h1}>{title}</Text>
             </View>
-            <View style={styles.container}>{children}</View>
+            <View style={localStyles.container}>{children}</View>
         </View>
     );
 }

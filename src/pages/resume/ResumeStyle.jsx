@@ -1,14 +1,26 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
-const styles = StyleSheet.create({
+export const theme = {
+    colors: {
+        accent: '#00adb5',
+        blue1: '#141c3a',
+        blue2: '#535e88',
+        blue3: '#dcdcde',
+        blue4: '#f9fbfd',
+        background: '#ffffff',
+        style1: '#e5ebf2',
+    }
+}
+
+export const styles = StyleSheet.create({
     page: {
-        backgroundColor: '#fff',
+        backgroundColor: theme.colors.background,
         flexDirection: 'row',
         width: '100%',
         height: '100%',
     },
     section: { padding: 20, gap: 18 },
-    sidebar: { width: '33%', backgroundColor: '#F9FBFD' },
+    sidebar: { width: '33%', backgroundColor: theme.colors.blue4 },
     main: { width: '66%' },
     header: { gap: 8 },
     imgContainer: {
@@ -25,7 +37,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: '96%',
         aspectRatio: '1:1',
-        backgroundColor: '#00ADB5',
+        backgroundColor: theme.colors.accent,
         borderRadius: 500,
     },
     profileImage: {
@@ -34,43 +46,48 @@ const styles = StyleSheet.create({
         left: -7,
         top: 10,
     },
-    h1: {
-        color: '#141C3A',
-        fontWeight: 900,
+    titleText: {
         fontSize: 20,
     },
-    h2: {
-        color: '#535E88',
-        fontWeight: 400,
+    subTitleText: {
+        color: theme.colors.blue2,
         fontSize: 14,
     },
-    p: {
-        color: '#535E88',
+    description: {
+        lineHeight: 1.3,
+    },
+    containerRow: {
+        flexDirection: 'row',
+        gap: 32,
+    },
+
+    h1: {
+        color: theme.colors.blue1,
+        fontWeight: 900,
+        fontSize: 16,
+    },
+    h2: {
+        color: theme.colors.blue1,
+        fontWeight: 400,
+        fontSize: 12,
+    },
+    h3: {
+        color: theme.colors.blue1,
         fontWeight: 300,
         fontSize: 10,
-        lineHeight: 1.3,
+    },
+    h4: {
+        color: theme.colors.blue2,
+        fontWeight: 300,
+        fontSize: 10,
+    },
+    p: {
+        color: theme.colors.blue2,
+        fontWeight: 300,
+        fontSize: 9,
     },
     a: {
         textDecoration: 'none',
-    },
-    skillsWrapper: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        //espace entre les categories
-    },
-    skillCategory: {
-        width: '48%',
-    },
-    categoryTitle: {
-        color: '#141C3A',
-        fontWeight: 400,
-        fontSize: 12,
-        marginBottom: 4,
-    },
-    skillsContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        gap: 4,
     },
 });
 

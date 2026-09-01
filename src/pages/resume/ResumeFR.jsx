@@ -2,17 +2,18 @@ import { Image, Text, Link, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 
-import PDFChip from './components/PDFChip.jsx';
 import PDFItemList from './components/PDFItemList.jsx';
 import PDFSection from './components/PDFSection.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
+import PDFSkills from "./components/PDFSkills.jsx";
 
 import profilePic from '../../../public/images/vic.png';
 import styles from './ResumeStyle.jsx';
 
+
 export default function ResumeFR() {
     const { t } = useTranslation();
-    const skillCategories = t('skills.categories', { returnObjects: true });
+    const skills = t('skills.categories', { returnObjects: true });
     const languages = t('resume.languages.items', { returnObjects: true });
     const hobbies = t('resume.hobbies.items', { returnObjects: true });
     const experiences = t('experiences.items', { returnObjects: true });
@@ -26,30 +27,17 @@ export default function ResumeFR() {
                     <Image style={styles.profileImage} src={profilePic} />
                 </View>
                 <PDFSection title={t('resume.profile.title')}>
-                    <PDFItemList src={'/icons/location.svg'} text={t('resume.profile.location')} />
+                    <PDFItemList src={'icons/location.svg'} text={t('resume.profile.location')} />
                     <Link style={styles.a} src={t('mailto', { email: t('email') })}>
-                        <PDFItemList src={'/icons/mail.svg'} text={t('email')} />
+                        <PDFItemList src={'icons/mail.svg'} text={t('email')} />
                     </Link>
-                    <PDFItemList src={'/icons/car.svg'} text={t('resume.profile.driver')} />
+                    <PDFItemList src={'icons/car.svg'} text={t('resume.profile.driver')} />
                     <Link style={styles.a} src={t('linkedin_url', { username: t('linkedin') })}>
-                        <PDFItemList src={'/icons/linkedin.svg'} text={`@${t('linkedin')}`} />
+                        <PDFItemList src={'icons/linkedin.svg'} text={`@${t('linkedin')}`} />
                     </Link>
                 </PDFSection>
                 <PDFSection title={t('skills.title.resume')}>
-                    <View style={styles.skillsContainer}>
-                        {skillCategories.length > 0 &&
-                            skillCategories.map((category, catIndex) => (
-                                <View key={catIndex} style={styles.skillCategory}>
-                                    <Text style={styles.categoryTitle}>{category.name}</Text>
-                                    <View style={styles.skillsContainer}>
-                                        {category.items.length > 0 &&
-                                            category.items.map((skill, skillIndex) => (
-                                                <PDFChip key={skillIndex} skill={skill} />
-                                            ))}
-                                    </View>
-                                </View>
-                            ))}
-                    </View>
+                    <PDFSkills skills={skills}/>
                 </PDFSection>
                 <PDFSection title={t('resume.languages.title')}>
                     {languages.length > 0 &&
@@ -67,10 +55,10 @@ export default function ResumeFR() {
             <View style={[styles.section, styles.main]}>
                 <View style={styles.header}>
                     <View>
-                        <Text style={styles.h1}>{t('name')}</Text>
-                        <Text style={styles.h2}>{t('title')}</Text>
+                        <Text style={[styles.h1, styles.titleText]}>{t('name')}</Text>
+                        <Text style={[styles.h2, styles.subTitleText]}>{t('title')}</Text>
                     </View>
-                    <Text style={styles.p}>{t('about.description')}</Text>
+                    <Text style={[styles.h4, styles.description]}>{t('about.description')}</Text>
                 </View>
                 <PDFSection title={t('experiences.title.resume')}>
                     {experiences.length > 0 &&
