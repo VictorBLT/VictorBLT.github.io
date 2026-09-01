@@ -62,6 +62,7 @@ header a:hover {
         flex-direction: column;
         position: absolute;
         margin-top: 60px;
+        height: initial;
         gap: 0;
         top: 0;
         left: 0;
@@ -70,9 +71,6 @@ header a:hover {
     }
 
     header nav ul > li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         background-color: var(--background);
         height: 0;
