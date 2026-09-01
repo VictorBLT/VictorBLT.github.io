@@ -10,8 +10,12 @@ const NAV_LINKS = [
 ];
 
 export default function Header() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const baseUrl = import.meta.env.BASE_URL;
+
+    const handleLanguageChange = (e) => {
+        i18n.changeLanguage(e.target.value);
+    };
 
     return (
         <header>
@@ -25,6 +29,7 @@ export default function Header() {
                     <span></span>
                     <span></span>
                 </div>
+
                 <ul>
                     {NAV_LINKS.map(({ id, path, labelKey }) => (
                         <li key={id}>
@@ -32,6 +37,16 @@ export default function Header() {
                         </li>
                     ))}
                 </ul>
+
+                <div className="language-selector">
+                    <select
+                        value={i18n.resolvedLanguage || 'en'}
+                        onChange={handleLanguageChange}
+                    >
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="en">🇬🇧 EN</option>
+                    </select>
+                </div>
             </nav>
         </header>
     );
