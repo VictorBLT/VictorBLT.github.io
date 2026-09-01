@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
-import styles from '../ResumeStyle.jsx'
+
+import styles from '../ResumeStyle.jsx';
 
 const localStyles = StyleSheet.create({
     container: {
@@ -10,7 +11,7 @@ const localStyles = StyleSheet.create({
     icon: {
         width: 14,
         height: 14,
-    }
+    },
 });
 
 export default function PDFItemList({ src, text }) {

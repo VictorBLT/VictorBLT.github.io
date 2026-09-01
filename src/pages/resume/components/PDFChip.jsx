@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
-import styles, {theme} from '../ResumeStyle.jsx'
+
+import styles, { theme } from '../ResumeStyle.jsx';
 
 const localStyles = StyleSheet.create({
     chip: {
@@ -8,7 +9,7 @@ const localStyles = StyleSheet.create({
         paddingVertical: 4,
         paddingHorizontal: 8,
         borderRadius: 12,
-        gap: 4
+        gap: 4,
     },
     chipLight: {
         backgroundColor: theme.colors.background,
@@ -22,11 +23,16 @@ const localStyles = StyleSheet.create({
     },
 });
 
-export default function PDFChip({ skill, isBadgeEnabled = true, isTextEnabled = true, isDarkMode = false }) {
+export default function PDFChip({
+    skill,
+    isBadgeEnabled = true,
+    isTextEnabled = true,
+    isDarkMode = false,
+}) {
     const baseUrl = import.meta.env.BASE_URL;
 
     return (
-        <View style={[localStyles.chip, isDarkMode? localStyles.chipDark : localStyles.chipLight]}>
+        <View style={[localStyles.chip, isDarkMode ? localStyles.chipDark : localStyles.chipLight]}>
             {isBadgeEnabled && <Image style={localStyles.badge} src={`${baseUrl}${skill.icon}`} />}
             {isTextEnabled && <Text style={styles.p}>{skill.name}</Text>}
         </View>

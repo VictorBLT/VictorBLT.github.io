@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
-import {styles, theme} from '../ResumeStyle.jsx'
+
+import { styles, theme } from '../ResumeStyle.jsx';
 
 const localStyles = StyleSheet.create({
     title: {

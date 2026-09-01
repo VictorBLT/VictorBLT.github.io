@@ -39,10 +39,7 @@ export default function Header() {
                 </ul>
 
                 <div className="language-selector">
-                    <select
-                        value={i18n.resolvedLanguage || 'en'}
-                        onChange={handleLanguageChange}
-                    >
+                    <select value={i18n.resolvedLanguage || 'en'} onChange={handleLanguageChange}>
                         <option value="fr">🇫🇷 FR</option>
                         <option value="en">🇬🇧 EN</option>
                     </select>

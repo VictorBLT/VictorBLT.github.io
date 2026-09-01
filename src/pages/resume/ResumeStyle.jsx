@@ -9,8 +9,8 @@ export const theme = {
         blue4: '#f9fbfd',
         background: '#ffffff',
         style1: '#e5ebf2',
-    }
-}
+    },
+};
 
 export const styles = StyleSheet.create({
     page: {

@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
-import {styles, theme} from '../ResumeStyle.jsx'
 import dayjs from 'dayjs';
+
+import { styles, theme } from '../ResumeStyle.jsx';
 
 const localStyles = StyleSheet.create({
     timeline: {
@@ -54,8 +55,12 @@ export default function PDFTimeline({ event, isLast, isDetailed = true }) {
     return (
         <View style={localStyles.timeline}>
             <View style={localStyles.dateColumn}>
-                <Text style={[styles.h3, localStyles.date]}>{dayjs(event.start).format('MMM YYYY')}</Text>
-                <Text style={[styles.h3, localStyles.date]}>{dayjs(event.end).format('MMM YYYY')}</Text>
+                <Text style={[styles.h3, localStyles.date]}>
+                    {dayjs(event.start).format('MMM YYYY')}
+                </Text>
+                <Text style={[styles.h3, localStyles.date]}>
+                    {dayjs(event.end).format('MMM YYYY')}
+                </Text>
             </View>
             <View style={localStyles.barColumn}>
                 <View style={localStyles.dot} />
@@ -64,7 +69,9 @@ export default function PDFTimeline({ event, isLast, isDetailed = true }) {
             <View style={[localStyles.contentColumn, !isLast && localStyles.paddingContentColumn]}>
                 <Text style={[styles.h2, localStyles.title]}>{event.title}</Text>
                 <Text style={[styles.h4, localStyles.location]}>{event.location}</Text>
-                {isDetailed && <Text style={[styles.p, localStyles.description]}>{event.description}</Text>}
+                {isDetailed && (
+                    <Text style={[styles.p, localStyles.description]}>{event.description}</Text>
+                )}
             </View>
         </View>
     );

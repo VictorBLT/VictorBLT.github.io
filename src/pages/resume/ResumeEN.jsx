@@ -1,18 +1,17 @@
-import { Text, Link, View } from '@react-pdf/renderer';
+import { Link, Text, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
-import styles from "./ResumeStyle.jsx";
 
+import PDFItemList from './components/PDFItemList.jsx';
 import PDFSection from './components/PDFSection.jsx';
+import PDFSkills from './components/PDFSkills.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
-import PDFItemList from "./components/PDFItemList.jsx";
-import PDFSkills from "./components/PDFSkills.jsx";
+import styles from './ResumeStyle.jsx';
 
 export default function ResumeEN() {
     const { t } = useTranslation();
     const experiences = t('experiences.items', { returnObjects: true });
     const education = t('education.items', { returnObjects: true });
     const skills = t('skills.categories', { returnObjects: true });
-
 
     return (
         <View style={[styles.section]}>
@@ -54,7 +53,7 @@ export default function ResumeEN() {
                     ))}
             </PDFSection>
             <PDFSection title={t('skills.title.resume')}>
-                <PDFSkills skills={skills} layout={'rows'}/>
+                <PDFSkills skills={skills} layout={'rows'} />
             </PDFSection>
             {/*<PDFSection title={t('projects.title.resume')}></PDFSection>*/}
         </View>

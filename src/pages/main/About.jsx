@@ -30,7 +30,7 @@ export default function About() {
                         title: t('title'),
                     })} ${t('about.description')}`}</p>
                     <PDFDownloadLink
-                        document={<Resume/>}
+                        document={<Resume />}
                         fileName={`${t('resume.file', { name: t('name') })}.pdf`}
                         className="button">
                         {t('about.download')}

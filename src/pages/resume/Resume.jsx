@@ -1,8 +1,8 @@
 import { Document, Page } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
-import ResumeFR from './ResumeFR.jsx';
 import ResumeEN from './ResumeEN.jsx';
+import ResumeFR from './ResumeFR.jsx';
 import styles from './ResumeStyle.jsx';
 
 export default function Resume() {

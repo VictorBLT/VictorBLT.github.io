@@ -1,15 +1,12 @@
-import { Image, Text, Link, View } from '@react-pdf/renderer';
+import { Image, Link, Text, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
-
+import profilePic from '../../../public/images/vic.png';
 import PDFItemList from './components/PDFItemList.jsx';
 import PDFSection from './components/PDFSection.jsx';
+import PDFSkills from './components/PDFSkills.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
-import PDFSkills from "./components/PDFSkills.jsx";
-
-import profilePic from '../../../public/images/vic.png';
 import styles from './ResumeStyle.jsx';
-
 
 export default function ResumeFR() {
     const { t } = useTranslation();
@@ -37,7 +34,7 @@ export default function ResumeFR() {
                     </Link>
                 </PDFSection>
                 <PDFSection title={t('skills.title.resume')}>
-                    <PDFSkills skills={skills}/>
+                    <PDFSkills skills={skills} />
                 </PDFSection>
                 <PDFSection title={t('resume.languages.title')}>
                     {languages.length > 0 &&
