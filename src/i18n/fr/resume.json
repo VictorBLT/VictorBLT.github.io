@@ -23,7 +23,7 @@
         "items": [
             {
                 "name": "Google HashCode",
-                "description": "Développement en Python d'un algorithme d'optimisation de livraisons par drones, intégrant la gestion des stocks et le calcul d'initinéraires sous contraintes temporelles."
+                "description": "Développement en Python d'un algorithme d'optimisation de livraisons par drones, intégrant la gestion des stocks et le calcul d'itinéraires sous contraintes temporelles."
             },
             {
                 "name": "AlphaForce",
