@@ -10,7 +10,7 @@
             "location": "Orange Business Services",
             "start": "2026-02-01",
             "end": "2026-08-01",
-            "description": "Création et industrialisation d'un pipeline ETL temps réel en Scala et Spark. Optimisation de l'acquisition des données IoT. Amélioration de la modularité (architecture hexagonale). Augmentation de la couverture de tests de 55 à 75%. Initialisation de la migration dans le Cloud sous Databricks et PySpark. Contribution à un dossier CIR."
+            "description": "Création et industrialisation d'un pipeline ETL temps réel en Scala et Spark. Optimisation de l'acquisition des données IoT. Amélioration de la modularité via une architecture hexagonale. Augmentation de la couverture de tests de 55 à 75%. Initialisation de la migration dans le Cloud sous Databricks et PySpark. Contribution à un dossier CIR."
         },
         {
             "title": "Développeur R&D",
