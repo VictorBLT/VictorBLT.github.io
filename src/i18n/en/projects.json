@@ -7,13 +7,13 @@
     "items": [
         {
             "name": "Tee Time Heros",
-            "description": "An interactive golf experience created during the Hyblab Hackathon for Ouest-France.",
+            "description": "An interactive experience about golf created during the Hyblab Hackathon for Ouest-France.",
             "image": "images/teetimeheros.jpg",
-            "skills": [{ "name": "Node.js", "icon": "icons/node.svg" }]
+            "skills": [{ "name": "React", "icon": "icons/react.svg" }]
         },
         {
             "name": "Bureau des Arts",
-            "description": "Web app for equipment inventory management and loan tracking for a student music association.",
+            "description": "Web app designed to manage equipment inventory and track loans for a music students union.",
             "image": "images/bda.jpg",
             "skills": [
                 { "name": "Node.js", "icon": "icons/node.svg" },
@@ -24,7 +24,7 @@
         },
         {
             "name": "AlphaForce",
-            "description": "E-commerce simulation for sports equipment.",
+            "description": "Fake online shop selling sports equipment.",
             "image": "images/alphaforce.jpg",
             "skills": [
                 { "name": "CodeIgniter", "icon": "icons/codeigniter.svg" },

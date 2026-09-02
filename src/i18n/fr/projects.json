@@ -9,11 +9,11 @@
             "name": "Tee Time Heros",
             "description": "Une expérience interactive ludique autour du golf crée lors du Hackathon Hyblab pour Ouest-France.",
             "image": "images/teetimeheros.jpg",
-            "skills": [{ "name": "Node.js", "icon": "icons/node.svg" }]
+            "skills": [{ "name": "React", "icon": "icons/react.svg" }]
         },
         {
             "name": "Bureau des Arts",
-            "description": "Web App de gestion de parc matériel et suivi des emprunts pour une association musicale étudiante.",
+            "description": "Web App de gestion de matériel et suivi des emprunts pour une association étudiante musicale.",
             "image": "images/bda.jpg",
             "skills": [
                 { "name": "Node.js", "icon": "icons/node.svg" },
