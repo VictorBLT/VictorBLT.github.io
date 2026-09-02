@@ -5,7 +5,8 @@
         "resume": "Présentation"
     },
     "picture": "{{name}} - {{title}}",
-    "greetings": "Bonjour ! Je suis {{name}}, {{title}}.",
-    "description": "Mon expertise s'étend du développement logiciel aux architectures Web Full-Stack, avec une spécialisation en Data et IA. Rigoureux, je place la qualité du code et les standards industriels au cœur de mes réalisations.",
+    "greetings": "Bonjour ! Je suis {{name}}.",
+    "description": "Ingénieur passionné par le développement logiciel et la Data, j'aime résoudre des défis techniques. Rigoureux dans mes projets, je reste particulièrement attaché aux bonnes pratiques de développement et à la qualité du code.",
+    "closing": "Découvrez mes réalisations ci dessous.",
     "download": "Télécharger mon CV"
 }

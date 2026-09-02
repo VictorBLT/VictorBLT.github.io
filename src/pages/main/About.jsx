@@ -25,10 +25,11 @@ export default function About() {
                 </div>
                 <div className="vertical-container">
                     <Title>{t('about.title.long')}</Title>
-                    <p>{`${t('about.greetings', {
-                        name: t('name'),
-                        title: t('title'),
-                    })} ${t('about.description')}`}</p>
+                    <p>
+                        {`${t('about.greetings', { name: t('name') })}
+                        ${t('about.description')}
+                        ${t('about.closing')}`}
+                    </p>
                     <PDFDownloadLink
                         document={<Resume />}
                         fileName={`${t('resume.file', { name: t('name') })}.pdf`}
