@@ -1,4 +1,5 @@
-span.accent {
-    color: var(--accent) !important;
-    padding-right: 10px;
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
