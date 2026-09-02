@@ -1,8 +1,9 @@
 {
     "name": "Victor Blot",
     "title": "Software and Data Engineer",
-    "linkedin": "victor-blot",
-    "linkedin_url": "https://www.linkedin.com/in/{{username}}",
+    "linkedin": "linkedin.com/in/victor-blot",
+    "portfolio": "victorblt.github.io",
+    "url": "https://{{link}}",
     "email": "victor.blot44@gmail.com",
     "mailto": "mailto:{{email}}",
     "alt": {

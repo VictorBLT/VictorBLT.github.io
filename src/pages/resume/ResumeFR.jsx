@@ -29,10 +29,13 @@ export default function ResumeFR() {
                     <Link style={styles.a} src={t('mailto', { email: t('email') })}>
                         <PDFItemList src={'icons/mail.svg'} text={t('email')} />
                     </Link>
-                    <PDFItemList src={'icons/car.svg'} text={t('resume.profile.driver')} />
-                    <Link style={styles.a} src={t('linkedin_url', { username: t('linkedin') })}>
-                        <PDFItemList src={'icons/linkedin.svg'} text={`@${t('linkedin')}`} />
+                    <Link style={styles.a} src={t('url', { link: t('linkedin') })}>
+                        <PDFItemList src={'icons/linkedin.svg'} text={t('linkedin')} />
                     </Link>
+                    <Link style={styles.a} src={t('url', { link: t('portfolio') })}>
+                        <PDFItemList src={'icons/link.svg'} text={t('portfolio')} />
+                    </Link>
+                    <PDFItemList src={'icons/car.svg'} text={t('resume.profile.driver')} />
                 </PDFSection>
                 <PDFSection title={t('skills.title.resume')}>
                     <PDFSkills skills={skills} />

@@ -9,7 +9,7 @@ export function Footer() {
     return (
         <footer>
             <div id="contact" className="socials">
-                <a className="social-icon" href={t('linkedin_url', { username: t('linkedin') })}>
+                <a className="social-icon" href={t('url', { link: t('linkedin') })}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
