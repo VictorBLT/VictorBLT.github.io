@@ -5,7 +5,7 @@ import PDFChip from './PDFChip.jsx';
 
 const localStyles = StyleSheet.create({
     skillsContainer: {
-        width: '100%',
+        width: '110%',
         gap: 8,
     },
     containerCol: {
@@ -16,9 +16,8 @@ const localStyles = StyleSheet.create({
     containerRow: {
         flexDirection: 'column',
     },
-
     categoryCol: {
-        width: '45%',
+        width: '110%',
         flexDirection: 'column',
     },
     categoryRow: {
@@ -35,15 +34,11 @@ const localStyles = StyleSheet.create({
     },
 
     chipsContainer: {
-        gap: 4,
-    },
-    chipsContainerCol: {
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-    },
-    chipsContainerRow: {
         flexDirection: 'row',
         flexWrap: 'wrap',
+        gap: 4,
+    },
+    chipsContainerRow: {
         width: '85%',
     },
 });
@@ -72,9 +67,7 @@ export default function PDFSkills({ skills, layout = 'columns' }) {
                         <View
                             style={[
                                 localStyles.chipsContainer,
-                                isRow
-                                    ? localStyles.chipsContainerRow
-                                    : localStyles.chipsContainerCol,
+                                isRow ? localStyles.chipsContainerRow : '',
                             ]}>
                             {category.items.length > 0 &&
                                 category.items.map((skill, skillIndex) => (

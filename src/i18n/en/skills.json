@@ -8,6 +8,7 @@
         {
             "name": "Languages",
             "items": [
+                { "name": "C", "icon": "icons/c.svg" },
                 { "name": "C++", "icon": "icons/cpp.svg" },
                 { "name": "C#", "icon": "icons/csharp.svg" },
                 { "name": "Kotlin", "icon": "icons/kotlin.svg" },
@@ -15,6 +16,18 @@
                 { "name": "Golang", "icon": "icons/go.svg" },
                 { "name": "Python", "icon": "icons/python.svg" },
                 { "name": "Arduino", "icon": "icons/arduino.svg" }
+            ]
+        },
+        {
+            "name": "Data & IA",
+            "items": [
+                { "name": "Scala", "icon": "icons/scala.svg" },
+                { "name": "Spark", "icon": "icons/spark.svg" },
+                { "name": "Kafka", "icon": "icons/kafka.svg" },
+                { "name": "Databricks", "icon": "icons/databricks.svg" },
+                { "name": "MySQL", "icon": "icons/mysql.svg" },
+                { "name": "MongoDB", "icon": "icons/mongodb.svg" },
+                { "name": "PyTorch", "icon": "icons/pytorch.svg" }
             ]
         },
         {
@@ -26,16 +39,6 @@
                 { "name": "CodeIgniter", "icon": "icons/codeigniter.svg" },
                 { "name": "Node.js", "icon": "icons/node.svg" },
                 { "name": "React", "icon": "icons/react.svg" }
-            ]
-        },
-        {
-            "name": "Data & IA",
-            "items": [
-                { "name": "PyTorch", "icon": "icons/pytorch.svg" },
-                { "name": "Spark", "icon": "icons/spark.svg" },
-                { "name": "Kafka", "icon": "icons/kafka.svg" },
-                { "name": "MySQL", "icon": "icons/mysql.svg" },
-                { "name": "MongoDB", "icon": "icons/mongodb.svg" }
             ]
         },
         {
