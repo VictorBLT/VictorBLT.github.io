@@ -10,28 +10,28 @@
             "location": "Orange Business Services",
             "start": "2026-02-01",
             "end": "2026-08-01",
-            "description": ""
+            "description": "Developed and industrialized a real-time ETL pipeline using Scala and Spark. Optimized IoT data acquisition. Improved modularity using hexagonal architecture. Increased test coverage from 55% to 75%. Initiated cloud migration with Databricks and PySpark."
         },
         {
             "title": "R&D Software Engineer",
             "location": "Cantoriel",
             "start": "2025-05-01",
             "end": "2025-08-01",
-            "description": "Research and integration of Keycloak IAM solution. Developed OIDC authentication services in Java. Implemented SSO and secured token exchanges using signatures and encryption."
+            "description": "Integrated the Keycloak IAM authentication service in Java. Implemented SSO and secured OIDC flows via JWT token signing and encryption. Automated deployment using Docker and PowerShell."
         },
         {
             "title": "Full Stack Developer",
             "location": "Inserm UMR U1246 SPHERE",
             "start": "2024-06-01",
             "end": "2024-07-01",
-            "description": "Designed and developed a web application for monitoring university internships. Built with Laravel and React. Containerized deployment via Docker and enforced Conventional Commits standards."
+            "description": "Designed and developed a web application for monitoring university internships. Built with Laravel, React and Material Design. Containerized deployment using Docker."
         },
         {
             "title": "Full Stack Developer",
             "location": "CHU de Nantes",
             "start": "2023-04-01",
             "end": "2023-07-01",
-            "description": "Developed business modules for a biostatistics platform, including a satisfaction survey tool, an internal forum, and a meeting agenda manager. Implemented MVC architecture using CodeIgniter."
+            "description": "Developed modules for a biostatistics platform, including a satisfaction survey tool, an internal forum, and a meeting agenda manager. Implemented MVC architecture using PHP and CodeIgniter."
         }
     ]
 }

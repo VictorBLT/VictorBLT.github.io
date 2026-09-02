@@ -10,28 +10,28 @@
             "location": "Orange Business Services",
             "start": "2026-02-01",
             "end": "2026-08-01",
-            "description": ""
+            "description": "Création et industrialisation d'un pipeline ETL temps réel en Scala et Spark. Optimisation de l'acquisition des données IoT. Amélioration de la modularité (architecture hexagonale). Augmentation de la couverture de tests de 55 à 75%. Initialisation de la migration dans le Cloud sous Databricks et PySpark. Contribution à un dossier CIR."
         },
         {
             "title": "Développeur R&D",
             "location": "Cantoriel",
             "start": "2025-05-01",
             "end": "2025-08-01",
-            "description": "Étude et intégration de la solution IAM Keycloak. Développement du service d'authentification OIDC en Java. Mise en œuvre du SSO et sécurisation des flux via signatures et chiffrements de tokens."
+            "description": "Intégration du service d'authentification IAM Keycloak en Java. Mise en œuvre du SSO et sécurisation des flux OIDC via la signature et le chiffrement des tokens JWT. Déploiement automatisé avec Docker et PowerShell."
         },
         {
             "title": "Développeur Full Stack",
             "location": "Inserm UMR U1246 SPHERE",
             "start": "2024-06-01",
             "end": "2024-07-01",
-            "description": "Conception d'une application web de suivi de stages universitaires. Développement avec Laravel et React. Déploiement conteneurisé via Docker. Respect des standards Conventional Commits."
+            "description": "Conception d'une application de suivi de stages universitaires. Développement avec Laravel, React et Material Design. Déploiement conteneurisé via Docker."
         },
         {
             "title": "Développeur Full Stack",
             "location": "CHU de Nantes",
             "start": "2023-04-01",
             "end": "2023-07-01",
-            "description": "Développement de modules métiers pour la plateforme de biostatistique: un outil d'enquêtes de satisfaction, un forum interne et un gestionnaire d'ordres du jour de réunions. Architecture MVC avec CodeIgniter."
+            "description": "Développement de modules pour la plateforme de biostatistique: un outil d'enquêtes de satisfaction, un forum interne et un gestionnaire d'ordres du jour de réunions. Architecture MVC avec PHP et CodeIgniter."
         }
     ]
 }
