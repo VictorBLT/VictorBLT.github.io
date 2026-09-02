@@ -19,7 +19,7 @@
             ]
         },
         {
-            "name": "Data & IA",
+            "name": "Data & AI",
             "items": [
                 { "name": "Scala", "icon": "icons/scala.svg" },
                 { "name": "Spark", "icon": "icons/spark.svg" },
