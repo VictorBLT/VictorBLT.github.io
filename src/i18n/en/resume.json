@@ -17,5 +17,18 @@
             { "name": "Trips", "icon": "icons/travel.svg" },
             { "name": "Music", "icon": "icons/music.svg" }
         ]
+    },
+    "projects": {
+        "title": "Projects",
+        "items": [
+            {
+                "name": "Google HashCode",
+                "description": "Developed a Python optimization algorithm for drone deliveries, integrating inventory management and route planning under strict time constraints."
+            },
+            {
+                "name": "AlphaForce",
+                "description": "Full-stack development of an online sports equipment store using PHP and CodeIgniter. Implemented the customer journey: product catalog, shopping cart, order processing, and account management."
+            }
+        ]
     }
 }

@@ -37,7 +37,7 @@ const localStyles = StyleSheet.create({
         flex: 1,
     },
     paddingContentColumn: {
-        paddingBottom: 10,
+        paddingBottom: 8,
     },
     title: {
         marginBottom: 1.5,

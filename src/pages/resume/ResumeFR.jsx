@@ -15,6 +15,7 @@ export default function ResumeFR() {
     const hobbies = t('resume.hobbies.items', { returnObjects: true });
     const experiences = t('experiences.items', { returnObjects: true });
     const education = t('education.items', { returnObjects: true });
+    const projects = t('resume.projects.items', { returnObjects: true });
 
     return (
         <>
@@ -78,7 +79,19 @@ export default function ResumeFR() {
                             />
                         ))}
                 </PDFSection>
-                {/*<PDFSection title={t('projects.title.resume')}></PDFSection>*/}
+                <PDFSection title={t('resume.projects.title')}>
+                    <View style={[styles.h4, styles.projectsContainer]}>
+                        {projects.length > 0 &&
+                            projects.map((project, index) => (
+                                <View key={index}>
+                                    <Text style={[styles.h2, styles.projectName]}>
+                                        {project.name}
+                                    </Text>
+                                    <Text style={[styles.p]}>{project.description}</Text>
+                                </View>
+                            ))}
+                    </View>
+                </PDFSection>
             </View>
         </>
     );

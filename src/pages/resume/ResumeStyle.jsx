@@ -60,6 +60,12 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: 32,
     },
+    projectsContainer: {
+        gap: 8,
+    },
+    projectName: {
+        marginBottom: 4,
+    },
 
     h1: {
         color: theme.colors.blue1,
