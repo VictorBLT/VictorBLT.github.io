@@ -15,7 +15,7 @@
                 "long": [
                     "Supported by Orange Business, an Orange group subsidiary, Data Rider is a technical innovation demonstrator. This project reimagines the classic miniature electric car track as an interactive game powered by data and AI.",
                     "The track captures real-time positioning and electrical data from the vehicles. This data is processed to feed live dashboards and train an AI model that controls one of the cars. Players can race against the AI in two modes: a time trial for the fastest lap, or an eco-driving challenge focused on energy efficiency.",
-                    "Technically, the project relies on several interconnected software components that handle the entire data lifecycle. The pipeline starts with collecting raw sensor data via an Arduino board, which is then sent to a message queue. This data is then processed in real-time for validation and to apply business rules. It is then used by AI models to control a mechanical arm, while players monitor live speed and energy metrics on a dashboard. Finally, a web interface serves as the game launcher."
+                    "Technically, the project relies on several software components that handle the entire data lifecycle. The pipeline starts with collecting raw sensor data via an Arduino board, which is then sent to a message queue. This data is then processed in real-time for validation and to apply business transformation rules. It is then used by AI models to control a mechanical arm, while players monitor live speed and energy metrics on a dashboard. Finally, a web interface serves as the game launcher."
                 ]
             },
             "image": "images/datarider/main.jpg",
