@@ -43,3 +43,9 @@ footer .socials {
         display: none;
     }
 }
+
+@media (prefers-color-scheme: light){
+    footer {
+        color: var(--blue-3);
+    }
+}
