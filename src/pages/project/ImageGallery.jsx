@@ -1,12 +1,26 @@
 import './imageGallery.css';
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function ImageGallery({ project_name, images }) {
     const { t } = useTranslation();
     const baseUrl = import.meta.env.BASE_URL;
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    const mainRef = useRef(null);
+
+    const handleScroll = () => {
+        if (mainRef.current) {
+            const scrollPosition = mainRef.current.scrollLeft;
+            const width = mainRef.current.clientWidth;
+            const newIndex = Math.round(scrollPosition / width);
+
+            if (newIndex !== currentIndex) {
+                setCurrentIndex(newIndex);
+            }
+        }
+    };
 
     const goToPrevious = () => {
         const isFirstImage = currentIndex === 0;
@@ -22,6 +36,13 @@ export default function ImageGallery({ project_name, images }) {
 
     const goToImage = (index) => {
         setCurrentIndex(index);
+        if (mainRef.current) {
+            const width = mainRef.current.clientWidth;
+            mainRef.current.scrollTo({
+                left: width * index,
+                behavior: 'smooth',
+            });
+        }
     };
 
     return (
@@ -31,11 +52,16 @@ export default function ImageGallery({ project_name, images }) {
                     &#10094;
                 </button>
 
-                <img
-                    src={`${baseUrl}${images[currentIndex]}`}
-                    alt={`${t('alt.image', { name: project_name })} ${currentIndex + 1}`}
-                    draggable={false}
-                />
+                <div className="main-scrollable-container" ref={mainRef} onScroll={handleScroll}>
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            src={`${baseUrl}${image}`}
+                            alt={`${t('alt.image', { name: project_name })} ${index + 1}`}
+                            draggable={false}
+                        />
+                    ))}
+                </div>
 
                 <button className="solid right" onClick={goToNext}>
                     &#10095;
