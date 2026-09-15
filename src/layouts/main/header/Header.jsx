@@ -1,6 +1,6 @@
 import './header.css';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -16,6 +16,7 @@ export default function Header() {
     const { t, i18n } = useTranslation();
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [prevPath, setPrevPath] = useState(location.pathname + location.hash);
 
     const handleLanguageChange = (e) => {
         i18n.changeLanguage(e.target.value);
@@ -23,9 +24,11 @@ export default function Header() {
 
     const closeMenu = () => setIsMenuOpen(false);
 
-    useEffect(() => {
+    const currentPath = location.pathname + location.hash;
+    if (currentPath !== prevPath) {
+        setPrevPath(currentPath);
         setIsMenuOpen(false);
-    }, [location]);
+    }
 
     return (
         <header>
