@@ -70,22 +70,23 @@ img {
 a,
 button {
     width: fit-content;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+a {
     font-style: italic;
     color: var(--accent);
-    cursor: pointer;
-    outline: none;
     text-decoration: none;
     transition: text-decoration ease 125ms;
 }
-
 a:hover,
-a:focus,
-button:hover,
-button:focus {
+a:focus {
     text-decoration: underline;
 }
 
-button,
+button.solid,
 a.button {
     padding: 5px 20px;
     border-radius: 40px;
@@ -100,10 +101,11 @@ a.button {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
-button:hover,
+button.solid:hover,
 a.button:hover {
     color: var(--accent) !important;
     border: 3px solid var(--accent) !important;
+    text-decoration: none;
 }
 
 select {

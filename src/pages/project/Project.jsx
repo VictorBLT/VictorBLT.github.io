@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import open from '../../../public/icons/open.svg';
 import Chip from '../../components/chip/Chip.jsx';
 import Title from '../../components/title/Title.jsx';
+import ImageGallery from './ImageGallery.jsx';
 
 export default function Project() {
     const { t } = useTranslation();
@@ -49,17 +50,7 @@ export default function Project() {
                     </div>
                 </section>
                 <section>
-                    <div className="project-gallery">
-                        {project.gallery.map((image, index) => (
-                            <div key={index} className="project-gallery-item">
-                                <img
-                                    src={`${baseUrl}${image}`}
-                                    alt={t('alt.image', { name: project.name })}
-                                    draggable={false}
-                                />
-                            </div>
-                        ))}
-                    </div>
+                    <ImageGallery images={project.gallery} project_name={project.name} />
                 </section>
                 {project.links && project.links.length > 0 && (
                     <section>

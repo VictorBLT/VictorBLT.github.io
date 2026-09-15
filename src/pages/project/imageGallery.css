@@ -1,0 +1,51 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container button {
+    position: absolute;
+}
+.main-container button.left {
+    left: -25px;
+}
+.main-container button.right {
+    right: -25px;
+}
+
+.thumbnails-container {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+}
+.thumbnails-container img {
+    max-width: 140px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.thumbnails-container img:hover {
+    opacity: 0.8;
+}
+
+.thumbnails-container img.active {
+    opacity: 1;
+}
