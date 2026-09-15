@@ -125,6 +125,24 @@ select:focus {
     border-color: var(--accent);
 }
 
+span.svg-icon{
+    width: 24px;
+    height: 24px;
+    background-color: var(--blue-1);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition: all ease 125ms;
+}
+
+a.button:hover span.svg-icon,
+button:hover span.svg-icon{
+    background-color: var(--accent);
+}
+
 main section {
     padding: 120px 30px;
     display: flex;

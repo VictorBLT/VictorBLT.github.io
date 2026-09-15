@@ -3,7 +3,6 @@ import './project.css';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 
-import open from '../../../public/icons/open.svg';
 import Chip from '../../components/chip/Chip.jsx';
 import Title from '../../components/title/Title.jsx';
 import ImageGallery from './ImageGallery.jsx';
@@ -62,11 +61,23 @@ export default function Project() {
                                         target="_blank"
                                         rel="noreferrer"
                                         className="button">
-                                        <span>
-                                            <img src={`${baseUrl}${link.icon}`} alt={''} />
+                                        <div>
+                                            <span
+                                                className="svg-icon"
+                                                style={{
+                                                    WebkitMaskImage: `url(${baseUrl}${link.icon})`,
+                                                    maskImage: `url(${baseUrl}${link.icon})`
+                                                }}
+                                            />
                                             {link.name}
-                                        </span>
-                                        <img src={open} alt={'test'} />
+                                        </div>
+                                        <span
+                                            className="svg-icon"
+                                            style={{
+                                                WebkitMaskImage: `url(${baseUrl}icons/open.svg)`,
+                                                maskImage: `url(${baseUrl}icons/open.svg)`
+                                            }}
+                                        />
                                     </a>
                                 </li>
                             ))}
