@@ -55,7 +55,14 @@
             },
             "image": "images/teetimeheros/main.jpg",
             "banner": "images/teetimeheros/main.jpg",
-            "gallery": ["images/teetimeheros/main.jpg"],
+            "gallery": [
+                "images/teetimeheros/main.jpg",
+                "images/teetimeheros/teetimeheros_1.jpg",
+                "images/teetimeheros/teetimeheros_2.jpg",
+                "images/teetimeheros/teetimeheros_3.jpg",
+                "images/teetimeheros/teetimeheros_4.jpg",
+                "images/teetimeheros/teetimeheros_5.jpg"
+            ],
             "skills": [
                 { "name": "React", "icon": "icons/react.svg" },
                 { "name": "JavaScript", "icon": "icons/js.svg" },
@@ -94,7 +101,7 @@
             },
             "image": "images/bda/main.jpg",
             "banner": "images/bda/main.jpg",
-            "gallery": ["images/bda/main.jpg"],
+            "gallery": ["images/bda/bda_1.jpg", "images/bda/bda_2.jpg"],
             "skills": [
                 { "name": "Node.js", "icon": "icons/node.svg" },
                 { "name": "React", "icon": "icons/react.svg" },
