@@ -48,9 +48,11 @@ export default function ImageGallery({ project_name, images }) {
     return (
         <div className="gallery-container">
             <div className="main-container">
-                <button className="solid left" onClick={goToPrevious}>
-                    &#10094;
-                </button>
+                {images.length > 1 && (
+                    <button className="solid left" onClick={goToPrevious}>
+                        &#10094;
+                    </button>
+                )}
 
                 <div className="main-scrollable-container" ref={mainRef} onScroll={handleScroll}>
                     {images.map((image, index) => (
@@ -63,26 +65,30 @@ export default function ImageGallery({ project_name, images }) {
                     ))}
                 </div>
 
-                <button className="solid right" onClick={goToNext}>
-                    &#10095;
-                </button>
+                {images.length > 1 && (
+                    <button className="solid right" onClick={goToNext}>
+                        &#10095;
+                    </button>
+                )}
             </div>
 
-            <div className="thumbnails-container">
-                {images.map((image, index) => (
-                    <button
-                        key={index}
-                        type="button"
-                        className={currentIndex === index ? 'active' : ''}
-                        onClick={() => goToImage(index)}>
-                        <img
-                            src={`${baseUrl}${image}`}
-                            alt={`${t('alt.image', { name: project_name })} ${index + 1}`}
-                            draggable={false}
-                        />
-                    </button>
-                ))}
-            </div>
+            {images.length > 1 && (
+                <div className="thumbnails-container">
+                    {images.map((image, index) => (
+                        <button
+                            key={index}
+                            type="button"
+                            className={currentIndex === index ? 'active' : ''}
+                            onClick={() => goToImage(index)}>
+                            <img
+                                src={`${baseUrl}${image}`}
+                                alt={`${t('alt.image', { name: project_name })} ${index + 1}`}
+                                draggable={false}
+                            />
+                        </button>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }
