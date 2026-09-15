@@ -44,13 +44,10 @@ export default function ImageGallery({ project_name, images }) {
 
             <div className="thumbnails-container">
                 {images.map((image, index) => (
-                    <button
-                        key={index}
-                        type="button"
-                        className={`button-area ${currentIndex === index ? 'active' : ''}`}
-                        onClick={() => goToImage(index)}>
+                    <button key={index} type="button" onClick={() => goToImage(index)}>
                         <img
                             src={`${baseUrl}${image}`}
+                            className={currentIndex === index ? 'active' : ''}
                             alt={`${t('alt.image', { name: project_name })} ${index + 1}`}
                             draggable={false}
                         />
