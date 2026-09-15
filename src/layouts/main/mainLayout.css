@@ -125,7 +125,7 @@ select:focus {
     border-color: var(--accent);
 }
 
-span.svg-icon{
+span.svg-icon {
     width: 24px;
     height: 24px;
     background-color: var(--blue-1);
@@ -139,7 +139,7 @@ span.svg-icon{
 }
 
 a.button:hover span.svg-icon,
-button:hover span.svg-icon{
+button:hover span.svg-icon {
     background-color: var(--accent);
 }
 

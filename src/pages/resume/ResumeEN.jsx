@@ -26,7 +26,7 @@ export default function ResumeEN() {
                         <PDFItemList src={'icons/mail.svg'} text={t('email')} />
                     </Link>
                     <Link style={styles.a} src={t('url', { link: t('linkedin') })}>
-                        <PDFItemList src={'icons/linkedin.svg'} text={t('linkedin')} />
+                        <PDFItemList src={'icons/linkedin_blue.svg'} text={t('linkedin')} />
                     </Link>
                     <Link style={styles.a} src={t('url', { link: t('portfolio') })}>
                         <PDFItemList src={'icons/link.svg'} text={t('portfolio')} />

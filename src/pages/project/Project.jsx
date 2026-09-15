@@ -66,7 +66,7 @@ export default function Project() {
                                                 className="svg-icon"
                                                 style={{
                                                     WebkitMaskImage: `url(${baseUrl}${link.icon})`,
-                                                    maskImage: `url(${baseUrl}${link.icon})`
+                                                    maskImage: `url(${baseUrl}${link.icon})`,
                                                 }}
                                             />
                                             {link.name}
@@ -75,7 +75,7 @@ export default function Project() {
                                             className="svg-icon"
                                             style={{
                                                 WebkitMaskImage: `url(${baseUrl}icons/open.svg)`,
-                                                maskImage: `url(${baseUrl}icons/open.svg)`
+                                                maskImage: `url(${baseUrl}icons/open.svg)`,
                                             }}
                                         />
                                     </a>
