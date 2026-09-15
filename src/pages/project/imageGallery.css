@@ -18,6 +18,10 @@
     justify-content: center;
 }
 
+.main-container img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .main-container button {
     position: absolute;
 }
@@ -32,20 +36,22 @@
     display: flex;
     gap: 12px;
     overflow-x: auto;
+    padding: 10px 15px 25px 15px;
 }
-.thumbnails-container img {
+
+.thumbnails-container button{
     max-width: 140px;
     width: 100%;
     border-radius: 8px;
-    cursor: pointer;
     opacity: 0.6;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.thumbnails-container img:hover {
+.thumbnails-container button:hover {
     opacity: 0.8;
 }
 
-.thumbnails-container img.active {
+.thumbnails-container button.active {
     opacity: 1;
 }
