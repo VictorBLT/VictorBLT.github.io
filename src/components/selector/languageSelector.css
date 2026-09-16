@@ -24,6 +24,13 @@
     border-color: var(--accent);
 }
 
+.language-selector .dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+.language-selector .dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
 .language-selector .dropdown-menu {
     position: absolute;
     top: 100%;
