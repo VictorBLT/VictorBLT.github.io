@@ -44,7 +44,7 @@ footer .socials {
     }
 }
 
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: light) {
     footer {
         color: var(--blue-3);
     }

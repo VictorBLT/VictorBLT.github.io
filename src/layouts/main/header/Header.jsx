@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
+import LanguageSelector from '../../../components/selector/LanguageSelector.jsx';
+
 const NAV_LINKS = [
     { id: 'about', path: '#about', labelKey: 'about.title.short' },
     { id: 'experiences', path: '#experiences', labelKey: 'experiences.title.short' },
@@ -13,14 +15,10 @@ const NAV_LINKS = [
 ];
 
 export default function Header() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [prevPath, setPrevPath] = useState(location.pathname + location.hash);
-
-    const handleLanguageChange = (e) => {
-        i18n.changeLanguage(e.target.value);
-    };
 
     const closeMenu = () => setIsMenuOpen(false);
 
@@ -60,12 +58,7 @@ export default function Header() {
                     ))}
                 </ul>
 
-                <div className="language-selector">
-                    <select value={i18n.resolvedLanguage || 'en'} onChange={handleLanguageChange}>
-                        <option value="fr">🇫🇷 FR</option>
-                        <option value="en">🇬🇧 EN</option>
-                    </select>
-                </div>
+                <LanguageSelector />
             </nav>
         </header>
     );

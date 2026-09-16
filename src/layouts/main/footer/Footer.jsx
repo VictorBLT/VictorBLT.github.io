@@ -3,7 +3,7 @@ import './footer.css';
 import dayjs from 'dayjs';
 import { useTranslation } from 'react-i18next';
 
-export function Footer() {
+export default function Footer() {
     const { t } = useTranslation();
     const baseUrl = import.meta.env.BASE_URL;
 

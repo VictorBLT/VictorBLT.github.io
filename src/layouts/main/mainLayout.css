@@ -125,6 +125,15 @@ select:focus {
     border-color: var(--accent);
 }
 
+span.svg-img {
+    width: 24px;
+    height: 24px;
+    background-color: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 span.svg-icon {
     width: 24px;
     height: 24px;

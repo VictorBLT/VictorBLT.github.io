@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import { Card } from '../../components/card/Card.jsx';
+import Card from '../../components/card/Card.jsx';
 import Timeline from '../../components/timeline/Timeline.jsx';
 import Title from '../../components/title/Title.jsx';
 import About from './About.jsx';

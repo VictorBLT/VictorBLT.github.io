@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 import Chip from '../chip/Chip.jsx';
 
-export function Card({ project }) {
+export default function Card({ project }) {
     const { t } = useTranslation();
     const baseUrl = import.meta.env.BASE_URL;
 
