@@ -26,8 +26,8 @@
                 "description": "Développement en Python d'un algorithme d'optimisation de livraisons par drones, intégrant la gestion des stocks et le calcul d'itinéraires sous contraintes temporelles."
             },
             {
-                "name": "AlphaForce",
-                "description": "Conception full-stack d'une boutique en ligne d'équipements sportifs avec PHP et CodeIgniter. Implémentation du parcours client: catalogue produits, panier, commandes, gestion du compte."
+                "name": "Plateforme Web de Réservation et Location",
+                "description": "Conception d'une application pour le Bureau des Arts de Polytech Nantes. Intégration d'une interface membre: calendrier de réservation, emprunt de matériel (type e-commerce) et d'un espace administrateur (gestion des stocks et validation des demandes)."
             }
         ]
     }
