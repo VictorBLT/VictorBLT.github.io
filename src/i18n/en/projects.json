@@ -103,7 +103,7 @@
             },
             "image": "images/bda/main.jpg",
             "banner": "images/bda/main.jpg",
-            "gallery": ["images/bda/bda_1.jpg", "images/bda/bda_2.jpg"],
+            "gallery": ["images/bda/main.jpg", "images/bda/bda_1.jpg", "images/bda/bda_2.jpg"],
             "skills": [
                 { "name": "Node.js", "icon": "icons/node.svg" },
                 { "name": "React", "icon": "icons/react.svg" },
@@ -149,7 +149,7 @@
             },
             "image": "images/ljdo/main.jpg",
             "banner": "images/ljdo/main.jpg",
-            "gallery": ["images/ljdo/main.jpg"],
+            "gallery": ["images/ljdo/main.jpg", "images/ljdo/ljdo_1.jpg", "images/ljdo/ljdo_2.jpg", "images/ljdo/ljdo_3.jpg"],
             "skills": [
                 { "name": "HTML", "icon": "icons/html.svg" },
                 { "name": "CSS", "icon": "icons/css.svg" },
