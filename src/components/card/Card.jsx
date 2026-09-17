@@ -38,17 +38,11 @@ export default function Card({ project }) {
 
                 <div className="card-cta">
                     <Link to={`/project/${project.slug}`} className="button card-main-link">
-                        <span
-                            className="svg-icon"
-                            style={{
-                                WebkitMaskImage: `url(${baseUrl}icons/open.svg)`,
-                                maskImage: `url(${baseUrl}icons/open.svg)`,
-                            }}
-                        />
                         {t('projects.details')}
                     </Link>
                     {project.url && (
-                        <a href={project.url} target="_blank" className="" rel="noreferrer">
+                        <a href={project.url} target="_blank" className="link" rel="noreferrer">
+                            {t('projects.visit')}
                             <span
                                 className="svg-icon"
                                 style={{
@@ -56,7 +50,6 @@ export default function Card({ project }) {
                                     maskImage: `url(${baseUrl}icons/open.svg)`,
                                 }}
                             />
-                            {t('projects.visit')}
                         </a>
                     )}
                 </div>

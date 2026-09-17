@@ -90,6 +90,25 @@
     gap: 24px;
 }
 
+.card > .card-content .card-cta .button {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 14px;
+    border: 2px solid !important;
+}
+
+.card > .card-content .card-cta .link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card > .card-content .card-cta .link .svg-icon {
+    width: 16px;
+    height: 16px;
+    background-color: var(--accent);
+}
+
 @media (max-width: 800px) {
     .card-container {
         grid-template-columns: 1fr;
