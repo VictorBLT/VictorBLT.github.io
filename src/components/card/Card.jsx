@@ -20,28 +20,45 @@ export default function Card({ project }) {
                 />
             </div>
             <div className="card-content">
-                <div className="card-header">
-                    <div className="card-title">
-                        <Link to={`/project/${project.slug}`} className="card-main-link">
-                            <h2>{project.name}</h2>
-                        </Link>
-                        <h4>{project.date && dayjs(project.date).format('YYYY')}</h4>
-                    </div>
-                    {project.url && (
-                        <a
-                            href={project.url}
-                            target="_blank"
-                            className="external-link"
-                            rel="noreferrer">
-                            {project.url}
-                        </a>
-                    )}
+                <div className="card-title">
+                    <h2>{project.name}</h2>
+                    <h4>{project.date && dayjs(project.date).format('YYYY')}</h4>
                 </div>
-                <p>{project.description.short}</p>
+
                 <div className="chips-container">
-                    {project.skills.map((skill, index) => (
+                    {project.skills.slice(0, 3).map((skill, index) => (
                         <Chip key={index} skill={skill} />
                     ))}
+                    {project.skills.length > 3 && (
+                        <Chip key="chips-4" skill={{ name: `+${project.skills.length - 3}` }} />
+                    )}
+                </div>
+
+                <p>{project.description.short}</p>
+
+                <div className="card-cta">
+                    <Link to={`/project/${project.slug}`} className="button card-main-link">
+                        <span
+                            className="svg-icon"
+                            style={{
+                                WebkitMaskImage: `url(${baseUrl}icons/open.svg)`,
+                                maskImage: `url(${baseUrl}icons/open.svg)`,
+                            }}
+                        />
+                        {t('projects.details')}
+                    </Link>
+                    {project.url && (
+                        <a href={project.url} target="_blank" className="" rel="noreferrer">
+                            <span
+                                className="svg-icon"
+                                style={{
+                                    WebkitMaskImage: `url(${baseUrl}icons/open.svg)`,
+                                    maskImage: `url(${baseUrl}icons/open.svg)`,
+                                }}
+                            />
+                            {t('projects.visit')}
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

@@ -4,6 +4,8 @@
         "short": "Portfolio",
         "resume": "Projects"
     },
+    "visit": "Visit website",
+    "details": "More details",
     "items": [
         {
             "name": "Data Rider",

@@ -8,12 +8,14 @@ export default function Chip({ skill }) {
 
     return (
         <div className="chip">
-            <img
-                src={`${baseUrl}${skill.icon}`}
-                alt={t('alt.logo', { name: skill.name })}
-                draggable={false}
-            />
-            <p>{skill.name}</p>
+            {skill.icon && (
+                <img
+                    src={`${baseUrl}${skill.icon}`}
+                    alt={t('alt.logo', { name: skill.name })}
+                    draggable={false}
+                />
+            )}
+            {skill.name && <p>{skill.name}</p>}
         </div>
     );
 }
