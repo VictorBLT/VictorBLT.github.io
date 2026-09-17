@@ -3,25 +3,26 @@
 }
 
 .language-selector button {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 6px 10px;
     cursor: pointer;
     outline: none;
+    color: var(--blue-1) !important;
+    transition: all ease 125ms;
 }
 
 .language-selector button.dropdown-toggle {
     border-radius: 6px;
     border: 1px solid transparent;
     outline: none;
-    transition: all ease 125ms;
-    color: var(--blue-1);
     background-color: transparent;
 }
 .language-selector button.dropdown-toggle:hover,
 .language-selector button.dropdown-toggle:focus {
-    border-color: var(--accent);
+    border-color: var(--accent) !important;
 }
 
 .language-selector .dropdown-arrow {
@@ -42,13 +43,13 @@
     gap: 0;
     list-style: none;
     border-radius: 6px;
-    background: var(--background);
-    border: 1px solid var(--style-1);
-    transition: all ease 125ms;
+    overflow: hidden;
+    background: var(--background) !important;
+    border: 1px solid var(--style-1) !important;
 }
 .language-selector .dropdown-menu button:hover,
 .language-selector .dropdown-menu button:focus {
-    background-color: var(--style-1);
+    background-color: var(--style-1) !important;
 }
 
 .language-selector .svg-img {
@@ -56,4 +57,10 @@
     width: 24px;
     height: 16px;
     border-radius: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .badges-container .badge {
+        background-color: var(--blue-2) !important;
+    }
 }
