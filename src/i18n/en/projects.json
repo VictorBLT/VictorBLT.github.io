@@ -127,7 +127,7 @@
             },
             "image": "images/alphaforce/main.jpg",
             "banner": "images/alphaforce/main.jpg",
-            "gallery": ["images/alphaforce/main.jpg"],
+            "gallery": ["images/alphaforce/main.jpg", "images/alphaforce/alphaforce_1.jpg", "images/alphaforce/alphaforce_2.jpg", "images/alphaforce/alphaforce_3.jpg", "images/alphaforce/alphaforce_4.jpg", "images/alphaforce/alphaforce_5.jpg", "images/alphaforce/alphaforce_6.jpg", "images/alphaforce/alphaforce_7.jpg", "images/alphaforce/alphaforce_8.jpg"],
             "skills": [
                 { "name": "CodeIgniter", "icon": "icons/codeigniter.svg" },
                 { "name": "PHP", "icon": "icons/php.svg" },
