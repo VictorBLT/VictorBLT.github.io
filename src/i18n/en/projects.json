@@ -127,7 +127,17 @@
             },
             "image": "images/alphaforce/main.jpg",
             "banner": "images/alphaforce/main.jpg",
-            "gallery": ["images/alphaforce/main.jpg", "images/alphaforce/alphaforce_1.jpg", "images/alphaforce/alphaforce_2.jpg", "images/alphaforce/alphaforce_3.jpg", "images/alphaforce/alphaforce_4.jpg", "images/alphaforce/alphaforce_5.jpg", "images/alphaforce/alphaforce_6.jpg", "images/alphaforce/alphaforce_7.jpg", "images/alphaforce/alphaforce_8.jpg"],
+            "gallery": [
+                "images/alphaforce/main.jpg",
+                "images/alphaforce/alphaforce_1.jpg",
+                "images/alphaforce/alphaforce_2.jpg",
+                "images/alphaforce/alphaforce_3.jpg",
+                "images/alphaforce/alphaforce_4.jpg",
+                "images/alphaforce/alphaforce_5.jpg",
+                "images/alphaforce/alphaforce_6.jpg",
+                "images/alphaforce/alphaforce_7.jpg",
+                "images/alphaforce/alphaforce_8.jpg"
+            ],
             "skills": [
                 { "name": "CodeIgniter", "icon": "icons/codeigniter.svg" },
                 { "name": "PHP", "icon": "icons/php.svg" },
@@ -149,7 +159,12 @@
             },
             "image": "images/ljdo/main.jpg",
             "banner": "images/ljdo/main.jpg",
-            "gallery": ["images/ljdo/main.jpg", "images/ljdo/ljdo_1.jpg", "images/ljdo/ljdo_2.jpg", "images/ljdo/ljdo_3.jpg"],
+            "gallery": [
+                "images/ljdo/main.jpg",
+                "images/ljdo/ljdo_1.jpg",
+                "images/ljdo/ljdo_2.jpg",
+                "images/ljdo/ljdo_3.jpg"
+            ],
             "skills": [
                 { "name": "HTML", "icon": "icons/html.svg" },
                 { "name": "CSS", "icon": "icons/css.svg" },
