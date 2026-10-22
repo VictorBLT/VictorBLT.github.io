@@ -16,8 +16,8 @@
     grid-template-columns: 9px 1fr;
     grid-template-rows: min-content min-content 50px min-content min-content;
     grid-template-areas:
-        'date date'
         'location location'
+        'date date'
         'dot bar'
         'title title'
         'description description';
@@ -29,8 +29,8 @@
     grid-template-rows: min-content min-content 30px;
     grid-template-columns: 1fr 9px 2fr;
     grid-template-areas:
-        'date dot title'
-        'location bar description'
+        'location dot title'
+        'date bar description'
         '. bar .';
     column-gap: 50px;
 }
@@ -109,14 +109,15 @@
     .timeline,
     .timeline-container.vertical .timeline {
         max-width: unset;
-        grid-template-rows: min-content min-content 8px min-content 60px;
-        grid-template-columns: 9px 60px 1fr;
+        grid-template-rows: min-content min-content min-content 8px min-content 60px;
+        grid-template-columns: 9px 1fr;
         grid-template-areas:
-            'dot date title'
-            'bar date location'
-            'bar date .'
-            'bar date description'
-            'bar . .';
+            'dot title'
+            'bar location'
+            'bar date'
+            'bar .'
+            'bar description'
+            'bar .';
         column-gap: 18px;
         row-gap: 0;
     }
@@ -133,13 +134,7 @@
 
     .timeline-container .timeline-date,
     .timeline-container.vertical .timeline-date {
-        flex-direction: column;
         justify-content: start;
-        text-align: center;
-    }
-
-    .timeline-container .timeline-date-separator {
-        display: none;
     }
 
     .timeline-container.vertical .timeline-location,
