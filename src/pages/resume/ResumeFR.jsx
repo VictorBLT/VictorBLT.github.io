@@ -8,7 +8,6 @@ import PDFSection from './components/PDFSection.jsx';
 import PDFSkills from './components/PDFSkills.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
 import styles from './ResumeStyle.jsx';
-import PDFMarkdown from "./components/PDFMarkdown.jsx";
 
 export default function ResumeFR() {
     const { t } = useTranslation();

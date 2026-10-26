@@ -6,6 +6,7 @@ import PDFSection from './components/PDFSection.jsx';
 import PDFSkills from './components/PDFSkills.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
 import styles from './ResumeStyle.jsx';
+import PDFMarkdown from "./components/PDFMarkdown.jsx";
 
 export default function ResumeEN() {
     const { t } = useTranslation();
@@ -33,7 +34,10 @@ export default function ResumeEN() {
                         <PDFItemList src={'icons/link.svg'} text={t('portfolio')} />
                     </Link>
                 </View>
-                <Text style={[styles.h4, styles.description]}>{t('about.description')}</Text>
+                <PDFMarkdown
+                    style={[styles.p, styles.description]}
+                    text={t('about.description')}
+                />
             </View>
             <PDFSection title={t('education.title.resume')}>
                 {education.length > 0 &&
@@ -64,9 +68,10 @@ export default function ResumeEN() {
                         projects.map((project, index) => (
                             <View key={index}>
                                 <Text style={[styles.h2, styles.projectName]}>{project.name}</Text>
-                                <Text style={[styles.p, styles.description]}>
-                                    {project.description}
-                                </Text>
+                                <PDFMarkdown
+                                    style={[styles.p, styles.description]}
+                                    text={project.description}
+                                />
                             </View>
                         ))}
                 </View>
