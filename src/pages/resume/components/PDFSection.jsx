@@ -10,14 +10,14 @@ const localStyles = StyleSheet.create({
         paddingBottom: 3,
         borderBottomWidth: 1,
         borderBottomColor: theme.colors.blue3,
-        marginBottom: 8,
+        marginBottom: 6,
     },
     slash: {
-        width: 16,
-        height: 16,
+        width: 14,
+        height: 14,
     },
     container: {
-        gap: 5,
+        gap: 4,
     },
 });
 
@@ -26,10 +26,10 @@ export default function PDFSection({ title, children }) {
 
     return (
         <View>
-            <View style={localStyles.title}>
+            {title && (<View style={localStyles.title}>
                 <Image style={[localStyles.slash]} src={`${baseUrl}icons/slash.svg`} />
                 <Text style={styles.h1}>{title}</Text>
-            </View>
+            </View>)}
             <View style={localStyles.container}>{children}</View>
         </View>
     );

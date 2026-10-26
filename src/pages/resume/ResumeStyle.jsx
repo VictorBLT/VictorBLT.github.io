@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
     },
-    section: { padding: 20, gap: 18 },
+    section: { padding: 14, gap: 12 },
     sidebar: { width: '33%', backgroundColor: theme.colors.blue4 },
     main: { width: '66%' },
     header: { gap: 8 },
@@ -47,11 +47,11 @@ export const styles = StyleSheet.create({
         top: 10,
     },
     titleText: {
-        fontSize: 20,
+        fontSize: 18,
     },
     subTitleText: {
         color: theme.colors.blue2,
-        fontSize: 14,
+        fontSize: 13,
     },
     description: {
         lineHeight: 1.3,
@@ -69,8 +69,8 @@ export const styles = StyleSheet.create({
 
     h1: {
         color: theme.colors.blue1,
-        fontWeight: 900,
-        fontSize: 16,
+        fontWeight: 600,
+        fontSize: 14,
     },
     h2: {
         color: theme.colors.blue1,
@@ -78,7 +78,7 @@ export const styles = StyleSheet.create({
         fontSize: 12,
     },
     h3: {
-        color: theme.colors.blue1,
+        color: theme.colors.blue2,
         fontWeight: 300,
         fontSize: 10,
     },
@@ -95,6 +95,12 @@ export const styles = StyleSheet.create({
     a: {
         textDecoration: 'none',
     },
+    bold: {
+        fontWeight: 'bold',
+    },
+    italic: {
+        fontStyle: 'italic'
+    }
 });
 
 export default styles;

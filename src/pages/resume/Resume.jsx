@@ -1,5 +1,7 @@
-import { Document, Page } from '@react-pdf/renderer';
+import { Document, Page, Font } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
+
+Font.registerHyphenationCallback((word) => [word]);
 
 import ResumeEN from './ResumeEN.jsx';
 import ResumeFR from './ResumeFR.jsx';

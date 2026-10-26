@@ -5,8 +5,8 @@
         "resume": "Présentation"
     },
     "picture": "{{name}} - {{title}}",
-    "greetings": "Salut ! Moi c'est {{name}}.",
-    "description": "Ingénieur passionné par le développement logiciel et la Data, j'aime résoudre des défis techniques. Rigoureux dans mes projets, je reste particulièrement attaché aux bonnes pratiques de développement et à la qualité du code.",
+    "greetings": "Salut ! Moi c'est **{{name}}**.",
+    "description": "Ingénieur diplômé et passionné par le développement logiciel et la Data, j'aime résoudre des **défis techniques**. Rigoureux dans mes projets, je reste particulièrement attaché aux **bonnes pratiques** de développement et à la **qualité du code**.",
     "closing": "Découvrez mes réalisations ci dessous.",
     "download": "Télécharger mon CV"
 }

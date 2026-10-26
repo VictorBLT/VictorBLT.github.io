@@ -5,7 +5,7 @@ import PDFChip from './PDFChip.jsx';
 
 const localStyles = StyleSheet.create({
     skillsContainer: {
-        width: '110%',
+        width: '100%',
         gap: 8,
     },
     containerCol: {
@@ -17,7 +17,7 @@ const localStyles = StyleSheet.create({
         flexDirection: 'column',
     },
     categoryCol: {
-        width: '110%',
+        width: '100%',
         flexDirection: 'column',
     },
     categoryRow: {
@@ -43,7 +43,7 @@ const localStyles = StyleSheet.create({
     },
 });
 
-export default function PDFSkills({ skills, layout = 'columns' }) {
+export default function PDFSkills({ skills, layout = 'rows' }) {
     const isRow = layout === 'rows';
 
     return (
@@ -59,7 +59,7 @@ export default function PDFSkills({ skills, layout = 'columns' }) {
                         style={[isRow ? localStyles.categoryRow : localStyles.categoryCol]}>
                         <Text
                             style={[
-                                styles.h2,
+                                styles.h3,
                                 isRow ? localStyles.titleRow : localStyles.titleCol,
                             ]}>
                             {category.name}

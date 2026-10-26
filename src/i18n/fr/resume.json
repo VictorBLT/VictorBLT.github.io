@@ -2,12 +2,12 @@
     "file": "CV {{name}}",
     "profile": {
         "title": "Profil",
-        "location": "Couëron 44220",
+        "location": "Nantes, France",
         "driver": "Permis B & Véhiculé"
     },
     "languages": {
         "title": "Langues",
-        "items": [{ "name": "Anglais (Toeic: 900/990)", "icon": "icons/english.svg" }]
+        "items": [{ "name": "Anglais C1 (Toeic: 900/990)", "icon": "icons/english.svg" }]
     },
     "hobbies": {
         "title": "Loisirs",
@@ -22,12 +22,20 @@
         "title": "Projets",
         "items": [
             {
-                "name": "Google HashCode",
-                "description": "Développement en Python d'un algorithme d'optimisation de livraisons par drones, intégrant la gestion des stocks et le calcul d'itinéraires sous contraintes temporelles."
+                "name": "Système d'exploitation",
+                "description": "**Kernel** (Noyau système) de zéro en **C et assembleur**, gérant le CPU, la RAM, et le disque afin de lire, écrire et exécuter des programmes."
             },
             {
-                "name": "Plateforme Web de Réservation et Location",
-                "description": "Conception d'une application pour le Bureau des Arts de Polytech Nantes. Intégration d'une interface membre: calendrier de réservation, emprunt de matériel (type e-commerce) et d'un espace administrateur (gestion des stocks et validation des demandes)."
+                "name": "Serveur Homelab",
+                "description": "Serveur **Proxmox** personnel hébergeant GitLab, Immich, Plex et Nextcloud pour développer mes compétences en réseau et **DevOps**."
+            },
+            {
+                "name": "Google HashCode",
+                "description": "Algorithme d'**optimisation** de livraisons par drones en **Python**, intégrant la gestion des stocks et le calcul d'itinéraires sous contraintes temporelles."
+            },
+            {
+                "name": "App de réservation et location",
+                "description": "Application pour le Bureau des Arts de Polytech Nantes: calendrier de réservation, emprunt de matériel et gestion des stocks via un espace administrateur."
             }
         ]
     }

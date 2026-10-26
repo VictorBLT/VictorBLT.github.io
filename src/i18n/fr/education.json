@@ -6,24 +6,34 @@
     "items": [
         {
             "title": "Diplôme d’ingénieur Informatique",
-            "location": "Polytech Nantes",
+            "organization": "Polytech Nantes",
             "start": "2023-09-01",
             "end": "2026-07-01",
-            "description": "Architecture et génie logiciel, algorithmes avancés, intelligence artificielle et data science. Pilotage de projets d'envergure avec méthodes agiles."
+            "description": {
+                "long": "Architecture et génie logiciel, algorithmes avancés, intelligence artificielle et data science. Pilotage de projets d'envergure avec méthodes agiles.",
+                "resume": "Génie logiciel, Data & IA"
+            }
         },
         {
-            "title": "Semestre International",
-            "location": "Umeå Universitet, Suède",
+            "title": "Semestre d'échange",
+            "organization": "Umeå Universitet",
+            "location": "Suède",
             "start": "2025-09-01",
             "end": "2026-01-18",
-            "description": "Spécialisation en intelligence artificielle, traitement automatique des langues et optimisation algorithmique. Formation intégralement en anglais."
+            "description": {
+                "long": "Spécialisation en intelligence artificielle, traitement automatique des langues (NLP) et optimisation algorithmique. Formation intégralement en anglais.",
+                "resume": "Algorithmique, Optimisation, IA et NLP"
+            }
         },
         {
             "title": "DUT Informatique",
-            "location": "IUT Nantes",
+            "organization": "IUT Nantes",
             "start": "2021-09-01",
             "end": "2023-07-01",
-            "description": "Programmation orientée objet, conception de bases de données relationnelles et administration systèmes. Réalisation de projets web collaboratifs Full-Stack avec méthodes de gestion de projet."
+            "description": {
+                "long": "Programmation orientée objet, conception de bases de données relationnelles et administration systèmes. Réalisation de projets web collaboratifs Full-Stack avec méthodes de gestion de projet.",
+                "resume": " "
+            }
         }
     ]
 }

@@ -5,8 +5,8 @@
         "resume": "Summary"
     },
     "picture": "{{name}} - {{title}}",
-    "greetings": "Hey! I'm {{name}}.",
-    "description": "Software and Data engineer with a passion for solving technical challenges. I apply a rigorous approach to my projects, with a strong focus on development best practices and code quality.",
+    "greetings": "Hey! I'm **{{name}}**.",
+    "description": "Software and Data engineer with a passion for solving **technical challenges**. I apply a rigorous approach to my projects, with a strong focus on development **best practices** and **code quality**.",
     "closing": "Check out my work below.",
     "download": "Download Resume"
 }

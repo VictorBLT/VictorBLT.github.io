@@ -12,6 +12,7 @@ export default function ResumeEN() {
     const experiences = t('experiences.items', { returnObjects: true });
     const education = t('education.items', { returnObjects: true });
     const skills = t('skills.categories', { returnObjects: true });
+    const projects = t('resume.projects.items', { returnObjects: true });
 
     return (
         <View style={[styles.section]}>
@@ -41,7 +42,6 @@ export default function ResumeEN() {
                             key={index}
                             event={event}
                             isLast={index === education.length - 1}
-                            isDetailed={false}
                         />
                     ))}
             </PDFSection>
@@ -58,7 +58,19 @@ export default function ResumeEN() {
             <PDFSection title={t('skills.title.resume')}>
                 <PDFSkills skills={skills} layout={'rows'} />
             </PDFSection>
-            {/*<PDFSection title={t('projects.title.resume')}></PDFSection>*/}
+            <PDFSection title={t('resume.projects.title')}>
+                <View style={[styles.h4, styles.projectsContainer]}>
+                    {projects.length > 0 &&
+                        projects.map((project, index) => (
+                            <View key={index}>
+                                <Text style={[styles.h2, styles.projectName]}>
+                                    {project.name}
+                                </Text>
+                                <Text style={[styles.p, styles.description]}>{project.description}</Text>
+                            </View>
+                        ))}
+                </View>
+            </PDFSection>
         </View>
     );
 }

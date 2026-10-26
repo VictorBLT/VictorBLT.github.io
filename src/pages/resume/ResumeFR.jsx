@@ -7,6 +7,7 @@ import PDFSection from './components/PDFSection.jsx';
 import PDFSkills from './components/PDFSkills.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
 import styles from './ResumeStyle.jsx';
+import PDFMarkdown from "./components/PDFMarkdown.jsx";
 
 export default function ResumeFR() {
     const { t } = useTranslation();
@@ -24,7 +25,7 @@ export default function ResumeFR() {
                     <View style={styles.circleBackground} />
                     <Image style={styles.profileImage} src={profilePic} />
                 </View>
-                <PDFSection title={t('resume.profile.title')}>
+                <PDFSection>
                     <PDFItemList src={'icons/location.svg'} text={t('resume.profile.location')} />
                     <Link style={styles.a} src={t('mailto', { email: t('email') })}>
                         <PDFItemList src={'icons/mail.svg'} text={t('email')} />
@@ -37,8 +38,21 @@ export default function ResumeFR() {
                     </Link>
                     <PDFItemList src={'icons/car.svg'} text={t('resume.profile.driver')} />
                 </PDFSection>
-                <PDFSection title={t('skills.title.resume')}>
-                    <PDFSkills skills={skills} />
+                <PDFSection title={t('resume.projects.title')}>
+                    <View style={[styles.h4, styles.projectsContainer]}>
+                        {projects.length > 0 &&
+                            projects.map((project, index) => (
+                                <View key={index}>
+                                    <Text style={[styles.h2, styles.projectName]}>
+                                        {project.name}
+                                    </Text>
+                                    <PDFMarkdown
+                                        style={[styles.p, styles.description]}
+                                        text={project.description}
+                                    />
+                                </View>
+                            ))}
+                    </View>
                 </PDFSection>
                 <PDFSection title={t('resume.languages.title')}>
                     {languages.length > 0 &&
@@ -59,7 +73,10 @@ export default function ResumeFR() {
                         <Text style={[styles.h1, styles.titleText]}>{t('name')}</Text>
                         <Text style={[styles.h2, styles.subTitleText]}>{t('title')}</Text>
                     </View>
-                    <Text style={[styles.h4, styles.description]}>{t('about.description')}</Text>
+                    <PDFMarkdown
+                        style={[styles.p, styles.description]}
+                        text={t('about.description')}
+                    />
                 </View>
                 <PDFSection title={t('experiences.title.resume')}>
                     {experiences.length > 0 &&
@@ -71,6 +88,9 @@ export default function ResumeFR() {
                             />
                         ))}
                 </PDFSection>
+                <PDFSection title={t('skills.title.resume')}>
+                    <PDFSkills skills={skills} />
+                </PDFSection>
                 <PDFSection title={t('education.title.resume')}>
                     {education.length > 0 &&
                         education.map((event, index) => (
@@ -78,22 +98,8 @@ export default function ResumeFR() {
                                 key={index}
                                 event={event}
                                 isLast={index === education.length - 1}
-                                isDetailed={false}
                             />
                         ))}
-                </PDFSection>
-                <PDFSection title={t('resume.projects.title')}>
-                    <View style={[styles.h4, styles.projectsContainer]}>
-                        {projects.length > 0 &&
-                            projects.map((project, index) => (
-                                <View key={index}>
-                                    <Text style={[styles.h2, styles.projectName]}>
-                                        {project.name}
-                                    </Text>
-                                    <Text style={[styles.p]}>{project.description}</Text>
-                                </View>
-                            ))}
-                    </View>
                 </PDFSection>
             </View>
         </>

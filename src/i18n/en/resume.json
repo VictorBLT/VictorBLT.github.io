@@ -7,7 +7,7 @@
     },
     "languages": {
         "title": "Languages",
-        "items": [{ "name": "English (Toeic: 900/990)", "icon": "icons/english.svg" }]
+        "items": [{ "name": "English (Professional, Toeic: 900/990)", "icon": "icons/english.svg" }]
     },
     "hobbies": {
         "title": "Hobbies",
@@ -22,12 +22,20 @@
         "title": "Projects",
         "items": [
             {
-                "name": "Google HashCode",
-                "description": "Developed a Python optimization algorithm for drone deliveries, integrating inventory management and route planning under strict time constraints."
+                "name": "Operating System",
+                "description": "**Kernel** built from scratch in **C and Assembly**, managing the CPU, RAM, and disk to read, write, and execute programs."
             },
             {
-                "name": "AlphaForce",
-                "description": "Full-stack development of an online sports equipment store using PHP and CodeIgniter. Implemented the customer journey: product catalog, shopping cart, order processing, and account management."
+                "name": "Homelab Server",
+                "description": "Personal **Proxmox** server hosting GitLab, Immich, Plex, and Nextcloud to develop my networking and **DevOps** skills."
+            },
+            {
+                "name": "Google HashCode",
+                "description": "Drone delivery **optimization** algorithm in **Python**, integrating inventory management and routing under time constraints."
+            },
+            {
+                "name": "Booking and Rental App",
+                "description": "Application for the Polytech Nantes music association: booking calendar, equipment rental, and inventory management via an admin dashboard."
             }
         ]
     }
