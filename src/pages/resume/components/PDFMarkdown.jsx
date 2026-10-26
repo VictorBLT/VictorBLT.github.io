@@ -1,7 +1,7 @@
 import { Text } from '@react-pdf/renderer';
 
+import { getActiveMarks, renderInline } from '../../../components/mardown/parser.js';
 import { styles } from '../ResumeStyle.jsx';
-import {renderInline, getActiveMarks} from "../../../components/mardown/parser.js";
 
 const MARK_STYLES = {
     bold: styles.bold,
@@ -25,9 +25,5 @@ const pdfAdapter = {
 };
 
 export default function PDFMarkdown({ style, text }) {
-    return (
-        <Text style={style}>
-            {renderInline(text, pdfAdapter)}
-        </Text>
-    );
+    return <Text style={style}>{renderInline(text, pdfAdapter)}</Text>;
 }

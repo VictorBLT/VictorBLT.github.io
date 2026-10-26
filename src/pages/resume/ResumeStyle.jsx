@@ -99,8 +99,8 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     italic: {
-        fontStyle: 'italic'
-    }
+        fontStyle: 'italic',
+    },
 });
 
 export default styles;

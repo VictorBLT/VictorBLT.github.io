@@ -63,10 +63,10 @@ export default function ResumeEN() {
                     {projects.length > 0 &&
                         projects.map((project, index) => (
                             <View key={index}>
-                                <Text style={[styles.h2, styles.projectName]}>
-                                    {project.name}
+                                <Text style={[styles.h2, styles.projectName]}>{project.name}</Text>
+                                <Text style={[styles.p, styles.description]}>
+                                    {project.description}
                                 </Text>
-                                <Text style={[styles.p, styles.description]}>{project.description}</Text>
                             </View>
                         ))}
                 </View>

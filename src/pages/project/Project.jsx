@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 
 import Chip from '../../components/chip/Chip.jsx';
+import Markdown from '../../components/mardown/Markdown.jsx';
 import Title from '../../components/title/Title.jsx';
 import ImageGallery from './ImageGallery.jsx';
-import Markdown from "../../components/mardown/Markdown.jsx";
 
 export default function Project() {
     const { t } = useTranslation();
@@ -45,10 +45,7 @@ export default function Project() {
 
                     <div className="project-description">
                         {project.description.long.map((paragraph, index) => (
-                            <Markdown
-                                key={index}
-                                text={paragraph}
-                            />
+                            <Markdown key={index} text={paragraph} />
                         ))}
                     </div>
                 </section>

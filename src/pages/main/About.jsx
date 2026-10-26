@@ -4,9 +4,9 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 import profilePic from '../../../public/images/vic.png';
+import Markdown from '../../components/mardown/Markdown.jsx';
 import Title from '../../components/title/Title.jsx';
 import Resume from '../resume/Resume.jsx';
-import Markdown from "../../components/mardown/Markdown.jsx";
 
 export default function About() {
     const { t } = useTranslation();
@@ -27,11 +27,9 @@ export default function About() {
                 <div className="vertical-container">
                     <Title>{t('about.title.long')}</Title>
                     <Markdown
-                        text={
-                            `${t('about.greetings', { name: t('name') })}
+                        text={`${t('about.greetings', { name: t('name') })}
                             ${t('about.description')}
-                            ${t('about.closing')}`
-                        }
+                            ${t('about.closing')}`}
                     />
                     <PDFDownloadLink
                         document={<Resume />}

@@ -26,10 +26,12 @@ export default function PDFSection({ title, children }) {
 
     return (
         <View>
-            {title && (<View style={localStyles.title}>
-                <Image style={[localStyles.slash]} src={`${baseUrl}icons/slash.svg`} />
-                <Text style={styles.h1}>{title}</Text>
-            </View>)}
+            {title && (
+                <View style={localStyles.title}>
+                    <Image style={[localStyles.slash]} src={`${baseUrl}icons/slash.svg`} />
+                    <Text style={styles.h1}>{title}</Text>
+                </View>
+            )}
             <View style={localStyles.container}>{children}</View>
         </View>
     );

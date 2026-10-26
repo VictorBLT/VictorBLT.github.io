@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import dayjs from 'dayjs';
 
 import { styles, theme } from '../ResumeStyle.jsx';
-import PDFMarkdown from "./PDFMarkdown.jsx";
+import PDFMarkdown from './PDFMarkdown.jsx';
 
 const localStyles = StyleSheet.create({
     timeline: {
@@ -47,11 +47,11 @@ const localStyles = StyleSheet.create({
     subtitle: {
         fontStyle: 'italic',
         marginBottom: 4,
-    }
+    },
 });
 
 const formatDuration = (event, isDetailed) => {
-    const format = isDetailed ? 'MMMM YYYY' : 'YYYY'
+    const format = isDetailed ? 'MMMM YYYY' : 'YYYY';
     const start = dayjs(event.start).format(format);
     const end = dayjs(event.end).format(format);
     return `${start} - ${end}`;
@@ -73,11 +73,17 @@ export default function PDFTimeline({ event, isLast, isDetailed = true }) {
                         {event.location ? `, ${event.location}` : ''}
                     </Text>
                 </View>
-                <Text style={[styles.h4, localStyles.subtitle, localStyles.date]}>{formatDuration(event, isDetailed)}</Text>
+                <Text style={[styles.h4, localStyles.subtitle, localStyles.date]}>
+                    {formatDuration(event, isDetailed)}
+                </Text>
                 {isDetailed && (
                     <PDFMarkdown
                         style={[styles.p, styles.description]}
-                        text={event.description.resume? event.description.resume : event.description.long}
+                        text={
+                            event.description.resume
+                                ? event.description.resume
+                                : event.description.long
+                        }
                     />
                 )}
             </View>

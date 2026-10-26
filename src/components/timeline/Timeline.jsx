@@ -1,7 +1,8 @@
 import './timeline.css';
 
 import dayjs from 'dayjs';
-import Markdown from "../mardown/Markdown.jsx";
+
+import Markdown from '../mardown/Markdown.jsx';
 
 const formatDuration = (date) => {
     return dayjs(date).format('MMMM YYYY');
@@ -22,10 +23,7 @@ export default function Timeline({ event }) {
                 <span className="timeline-date-separator">-</span>
                 <span>{formatDuration(event.end)}</span>
             </h4>
-            <Markdown
-                className="timeline-description"
-                text={event.description.long}
-            />
+            <Markdown className="timeline-description" text={event.description.long} />
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import {renderInline, getActiveMarks} from "./parser.js";
+
+import { getActiveMarks, renderInline } from './parser.js';
 
 const MARK_TAGS = {
     bold: 'strong',
@@ -17,10 +18,6 @@ const htmlAdapter = {
     },
 };
 
-export default function Markdown({ text, ...props}) {
-    return (
-        <p {...props}>
-            {renderInline(text, htmlAdapter)}
-        </p>
-    );
+export default function Markdown({ text, ...props }) {
+    return <p {...props}>{renderInline(text, htmlAdapter)}</p>;
 }

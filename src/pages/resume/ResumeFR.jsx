@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import profilePic from '../../../public/images/vic.png';
 import PDFItemList from './components/PDFItemList.jsx';
+import PDFMarkdown from './components/PDFMarkdown.jsx';
 import PDFSection from './components/PDFSection.jsx';
 import PDFSkills from './components/PDFSkills.jsx';
 import PDFTimeline from './components/PDFTimeline.jsx';
