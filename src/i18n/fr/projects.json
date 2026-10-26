@@ -15,9 +15,9 @@
             "description": {
                 "short": "Un circuit de voitures miniatures piloté par la donnée et l'intelligence artificielle.",
                 "long": [
-                    "Porté par Orange Business, filiale du groupe Orange, Data Rider est un démonstrateur d'innovation technique. Ce projet consiste à réinventer le circuit de voitures électriques miniatures en un jeu interactif piloté par la donnée et l'IA.",
-                    "La piste capte en temps réel la position ainsi que les données électriques des véhicules. Ces données sont ensuite traitées et alimentent des tableaux de bord et un modèle IA conçu pour contrôler l'une des voitures. Les participants peuvent affronter l'IA autour de deux modes de jeu: une course de vitesse pour réaliser le tour le plus rapide, ou un défi d'éco-conduite valorisant la meilleure efficacité énergétique.",
-                    "Sur le plan technique, le projet est structuré en plusieurs briques logicielles qui couvrent l'ensemble du cycle de vie de la donnée. Le flux débute par la collecte des données brutes des capteurs via une carte Arduino, suivie de leur transmission vers une file de messages. Ces données sont ensuite traitées en temps réel pour être validées et appliquer les règles de transformation métier. Elles sont alors exploitées par des modèles d'Intelligence Artificielle pour piloter la main mécanique, et visualisées par les joueurs sur un tableau de bord affichant la vitesse et les métriques énergétiques en direct. Enfin, une interface web permet de lancer les parties."
+                    "Porté par **Orange Business**, filiale du groupe Orange, Data Rider est un démonstrateur d'innovation technique. Ce projet consiste à réinventer le circuit de voitures électriques miniatures en un **jeu interactif piloté par la donnée et l'IA**.",
+                    "La piste **capte en temps réel** la position ainsi que les données électriques des véhicules. Ces données sont ensuite traitées et alimentent des tableaux de bord et un modèle IA conçu pour contrôler l'une des voitures. Les participants peuvent affronter l'IA autour de deux modes de jeu: une **course de vitesse** pour réaliser le tour le plus rapide, ou un **défi d'éco-conduite** valorisant la meilleure efficacité énergétique.",
+                    "Sur le plan technique, le projet est structuré en plusieurs briques logicielles qui couvrent l'ensemble du **cycle de vie de la donnée**. Le flux débute par la collecte des données brutes des capteurs via une **carte Arduino**, suivie de leur transmission vers une **file de messages**. Ces données sont ensuite traitées en temps réel pour être validées et appliquer les règles de transformation métier. Elles sont alors exploitées par des **modèles d'Intelligence Artificielle** pour piloter la main mécanique, et visualisées par les joueurs sur un **tableau de bord** affichant la vitesse et les métriques énergétiques en direct. Enfin, une interface web permet de lancer les parties."
                 ]
             },
             "image": "images/datarider/main.jpg",
@@ -49,10 +49,10 @@
             "description": {
                 "short": "Une expérience interactive ludique autour du golf créée lors du Hackathon Hyblab pour Ouest-France.",
                 "long": [
-                    "J'ai eu l'opportunité de participer au HybLab édition 2025, un hackathon de 5 jours organisé par Ouest Medialab, réunissant professionnels des médias et étudiants autour de la création de nouveaux formats éditoriaux. Le thème de cette édition portait sur l'utilisation de l'Intelligence Artificielle dans le journalisme.",
-                    "Ce projet est le fruit d’une collaboration entre le journal Ouest-France et les étudiants de trois écoles: Sciences Po Rennes, L'école de design AGR et l'école d'ingénieur Polytech Nantes. Notre mission était de repenser la consommation de l’information sportive pour le public numérique de Ouest-France autour d'un article sur le golf. Notre problématique: Comment intéresser une audience large au golf et valoriser les performances de nos athlètes ?",
-                    "Pour ce faire, nous avons choisi de mettre en lumière les grands noms actuels du golf français: Céline Boutier et Matthieu Pavon, deux figures emblématiques de la discipline. Plutôt que d'écrire un article biographique classique,nous avons pris le parti de concevoir une expérience ludique et graphique autour d'un quiz. L'objectif était de permettre aux lecteurs d'entrer dans le sujet par le jeu, en découvrant l'histoire, le palmarès et le parcours de ces grands sportifs. Nous souhaitions faire parler la data pour raconter une histoire humaine.",
-                    "Notre projet a su convaincre le jury du HybLab 2025, qui nous a décerné la mention spéciale \"Efficacité de l’interface utilisateur et motion design\"."
+                    "J'ai eu l'opportunité de participer au HybLab édition 2025, un **hackathon de 5 jours** organisé par Ouest Medialab, réunissant professionnels des médias et étudiants autour de la création de nouveaux formats éditoriaux. Le thème de cette édition portait sur l'utilisation de l'Intelligence Artificielle dans le journalisme.",
+                    "Ce projet est le fruit d’une collaboration entre le journal **Ouest-France** et les étudiants de trois écoles: Sciences Po Rennes, L'école de design AGR et l'école d'ingénieur Polytech Nantes. Notre mission était de repenser la consommation de l’information sportive pour le public numérique de Ouest-France autour d'un article sur le golf. Notre problématique: Comment intéresser une audience large au golf et valoriser les performances de nos athlètes ?",
+                    "Pour ce faire, nous avons choisi de mettre en lumière les grands noms actuels du golf français: Céline Boutier et Matthieu Pavon, deux figures emblématiques de la discipline. Plutôt que d'écrire un article biographique classique,nous avons pris le parti de concevoir une **expérience ludique et graphique autour d'un quiz**. L'objectif était de permettre aux lecteurs d'entrer dans le sujet par le jeu, en découvrant l'histoire, le palmarès et le parcours de ces grands sportifs. Nous souhaitions faire parler la data pour raconter une histoire humaine.",
+                    "Notre projet a su convaincre le jury du HybLab 2025, qui nous a décerné la **mention spéciale \"Efficacité de l’interface utilisateur et motion design\"**."
                 ]
             },
             "image": "images/teetimeheros/main.jpg",
@@ -96,9 +96,9 @@
             "description": {
                 "short": "Web App de gestion de matériel et suivi des emprunts pour une association étudiante musicale.",
                 "long": [
-                    "Développée pour le Bureau des Arts de l'école Polytech Nantes, cette application simplifie la logistique de l'association. Le but était de centraliser l'accès à la salle de musique et de faciliter le prêt d'équipements.",
-                    "Pour les membres, l'outil intègre un système de réservation de la salle de musique via un calendrier permettant de visualiser facilement les créneaux disponibles. Il propose également un module d'emprunt de matériel pensé comme une boutique en ligne: consultation du catalogue des équipements disponibles, vérification de l'état des stocks, ajout d'articles au panier et définition des dates de retrait et de retour.",
-                    "Pour le bureau de l'association, un espace d'administration permet de piloter l'activité. Celui-ci permet la supervision des réservations de la salle, la validation des demandes d'emprunt, le suivi de l'inventaire et la gestion des utilisateurs."
+                    "Développée pour le Bureau des Arts de l'école Polytech Nantes, cette application **simplifie la logistique** de l'association. Le but était de centraliser l'accès à la salle de musique et de faciliter le prêt d'équipements.",
+                    "Pour les membres, l'outil intègre un **système de réservation** de la salle de musique via un calendrier permettant de visualiser facilement les créneaux disponibles. Il propose également un **module d'emprunt** de matériel pensé comme une boutique en ligne: consultation du catalogue des équipements disponibles, vérification de l'état des stocks, ajout d'articles au panier et définition des dates de retrait et de retour.",
+                    "Pour le bureau de l'association, un **espace d'administration** permet de piloter l'activité. Celui-ci permet la supervision des réservations de la salle, la validation des demandes d'emprunt, le suivi de l'inventaire et la gestion des utilisateurs."
                 ]
             },
             "image": "images/bda/main.jpg",
@@ -119,10 +119,10 @@
             "description": {
                 "short": "Simulation de boutique en ligne d'équipements sportifs.",
                 "long": [
-                    "Alpha Force est une plateforme de e-commerce fictive spécialisée dans la vente d'équipements sportifs, de vêtements, d'accessoires et de compléments alimentaires pour la musculation et le fitness.",
-                    "Réalisé en équipe dans le cadre d'un projet universitaire sur trois mois, ce projet couvre l'intégralité du cycle de développement: recueil des besoins, conception, architecture réseau, développement, tests unitaires et déploiement. L'objectif principal était de concevoir un site d'e-commerce avec une expérience utilisateur complète.",
-                    "Côté client, la plateforme offre un parcours d'achat complet: système d'authentification, moteur de recherche paginé avec tris et filtres, gestion du panier, liste de favoris, historique de commandes, système de notes et avis sur les produits achetés.",
-                    "Pour la partie administration, une interface dédiée met à disposition un tableau de bord complet. Celui-ci permet une gestion complète du catalogue (ajout de produits, gestion des tailles et des stocks), le suivi des commandes, la création de codes promotionnels, l'envoi de newsletters et le monitoring en temps réel des ressources du serveur."
+                    "Alpha Force est une **plateforme de e-commerce** fictive spécialisée dans la vente d'équipements sportifs, de vêtements, d'accessoires et de compléments alimentaires pour la musculation et le fitness.",
+                    "Réalisé en équipe dans le cadre d'un projet universitaire sur trois mois, ce projet couvre l'**intégralité du cycle de développement**: recueil des besoins, conception, architecture réseau, développement, tests unitaires et déploiement. L'objectif principal était de concevoir un site d'e-commerce avec une expérience utilisateur complète.",
+                    "Côté client, la plateforme offre un **parcours d'achat complet**: système d'authentification, moteur de recherche paginé avec tris et filtres, gestion du panier, liste de favoris, historique de commandes, système de notes et avis sur les produits achetés.",
+                    "Pour la partie administration, une interface dédiée met à disposition un **tableau de bord complet**. Celui-ci permet une gestion complète du catalogue (ajout de produits, gestion des tailles et des stocks), le suivi des commandes, la création de codes promotionnels, l'envoi de newsletters et le monitoring en temps réel des ressources du serveur."
                 ]
             },
             "image": "images/alphaforce/main.jpg",
@@ -153,8 +153,8 @@
             "description": {
                 "short": "Site vitrine responsive pour la présentation du catalogue d'une pépinière locale.",
                 "long": [
-                    "\"Le Jardin des Oiseaux\" est une pépinière locale proposant un large catalogue de produits. L'objectif de ce projet était de concevoir un site vitrine fidèle à l'image de l'entreprise afin de mettre en valeur leur savoir-faire paysager et la diversité de leurs articles.",
-                    "Pour répondre à ces attentes, le site intègre: un catalogue présentant les différents articles, une galerie illustrant les projets d'aménagement paysager réalisés par la pépinière et une frise chronologique verticale pour raconter l'histoire de l'entreprise. Le site a été pensé pour être responsive afin d'obtenir une expérience utilisateur optimale sur tous les supports."
+                    "\"Le Jardin des Oiseaux\" est une pépinière locale proposant un large catalogue de produits. L'objectif de ce projet était de concevoir un **site vitrine** fidèle à l'image de l'entreprise afin de mettre en valeur leur savoir-faire paysager et la diversité de leurs articles.",
+                    "Pour répondre à ces attentes, le site intègre: un **catalogue** présentant les différents articles, une **galerie** illustrant les projets d'aménagement paysager réalisés par la pépinière et une frise chronologique verticale pour raconter l'histoire de l'entreprise. Le site a été pensé pour être **responsive** afin d'obtenir une expérience utilisateur optimale sur tous les supports."
                 ]
             },
             "image": "images/ljdo/main.jpg",

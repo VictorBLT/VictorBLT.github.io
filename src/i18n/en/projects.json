@@ -15,9 +15,9 @@
             "description": {
                 "short": "A miniature electric car track powered by data and artificial intelligence.",
                 "long": [
-                    "Supported by Orange Business, an Orange group subsidiary, Data Rider is a technical innovation demonstrator. This project reimagines the classic miniature electric car track as an interactive game powered by data and AI.",
-                    "The track captures real-time positioning and electrical data from the vehicles. This data is processed to feed live dashboards and train an AI model that controls one of the cars. Players can race against the AI in two modes: a time trial for the fastest lap, or an eco-driving challenge focused on energy efficiency.",
-                    "Technically, the project relies on several software components that handle the entire data lifecycle. The pipeline starts with collecting raw sensor data via an Arduino board, which is then sent to a message queue. This data is then processed in real-time for validation and to apply business transformation rules. It is then used by AI models to control a mechanical arm, while players monitor live speed and energy metrics on a dashboard. Finally, a web interface serves as the game launcher."
+                    "Supported by **Orange Business**, an Orange group subsidiary, Data Rider is a technical innovation demonstrator. This project reimagines the classic miniature electric car track as an **interactive game powered by data and AI**.",
+                    "The track **captures real-time** positioning and electrical data from the vehicles. This data is processed to feed live dashboards and train an AI model that controls one of the cars. Players can race against the AI in two modes: a time trial for the **fastest lap**, or an **eco-driving challenge** focused on energy efficiency.",
+                    "Technically, the project relies on several software components that handle the **entire data lifecycle**. The pipeline starts with collecting raw sensor data via an **Arduino board**, which is then sent to a **message queue**. This data is then processed in real-time for validation and to apply business transformation rules. It is then used by **AI models** to control a mechanical arm, while players monitor live speed and energy metrics on a **dashboard**. Finally, a web interface serves as the game launcher."
                 ]
             },
             "image": "images/datarider/main.jpg",
@@ -49,10 +49,10 @@
             "description": {
                 "short": "An interactive golf experience developed for Ouest-France during the HybLab Hackathon.",
                 "long": [
-                    "I took part in the 2025 HybLab, a 5-day hackathon organized by Ouest Medialab that brought media professionals and students together to create new editorial formats. This year's theme focused on the role of Artificial Intelligence in journalism.",
-                    "Our project was a collaboration between the Ouest-France newspaper and students from Sciences Po Rennes, the AGR design school, and Polytech Nantes. Our goal was to reinvent how Ouest-France's digital audience consumes sports news, specifically through an article about golf. The main challenge was finding a way to make golf engaging for a broad audience while highlighting our athletes' performances.",
-                    "To do this, we focused on two major figures in French golf: Céline Boutier and Matthieu Pavon. Instead of writing a traditional biographical piece, we designed a fun, highly visual quiz-based experience. The goal was to let readers dive into the subject through gameplay, discovering the history, milestones, and careers of these top athletes. Ultimately, we wanted the data to tell a human story.",
-                    "Our project won over the HybLab 2025 jury, earning us a special mention for \"Effectiveness of user interface and motion design\"."
+                    "I took part in the 2025 HybLab, a **5-day hackathon** organized by Ouest Medialab that brought media professionals and students together to create new editorial formats. This year's theme focused on the role of Artificial Intelligence in journalism.",
+                    "Our project was a collaboration between the **Ouest-France** newspaper and students from Sciences Po Rennes, the AGR design school, and Polytech Nantes. Our goal was to reinvent how Ouest-France's digital audience consumes sports news, specifically through an article about golf. The main challenge was finding a way to make golf engaging for a broad audience while highlighting our athletes' performances.",
+                    "To do this, we focused on two major figures in French golf: Céline Boutier and Matthieu Pavon. Instead of writing a traditional biographical piece, we designed a **fun, highly visual quiz-based experience**. The goal was to let readers dive into the subject through gameplay, discovering the history, milestones, and careers of these top athletes. Ultimately, we wanted the data to tell a human story.",
+                    "Our project won over the HybLab 2025 jury, earning us a special **mention for \"Effectiveness of user interface and motion design\"**."
                 ]
             },
             "image": "images/teetimeheros/main.jpg",
@@ -96,9 +96,9 @@
             "description": {
                 "short": "A web app for managing equipment and tracking loans, built for a student music association.",
                 "long": [
-                    "Developed for the Bureau des Arts (Arts Council) at Polytech Nantes, this application streamlines the association's daily logistics. The goal was to centralize music room bookings and make equipment lending much easier.",
-                    "For members, the tool features a calendar-based music room booking system to easily find available time slots. It also includes an equipment borrowing module that works like an online store: users can browse the catalog, check stock availability, add items to their cart, and schedule pickup and return dates.",
-                    "For the association's executive board, a dedicated admin panel makes activity management a breeze. It allows them to oversee room bookings, approve borrowing requests, track inventory, and manage user accounts."
+                    "Developed for the Bureau des Arts (Arts Council) at Polytech Nantes, this application **streamlines the association's daily logistics**. The goal was to centralize music room bookings and make equipment lending much easier.",
+                    "For members, the tool features a calendar-based music **room booking system** to easily find available time slots. It also includes an **equipment borrowing module** that works like an online store: users can browse the catalog, check stock availability, add items to their cart, and schedule pickup and return dates.",
+                    "For the association's executive board, a **dedicated admin panel** makes activity management a breeze. It allows them to oversee room bookings, approve borrowing requests, track inventory, and manage user accounts."
                 ]
             },
             "image": "images/bda/main.jpg",
@@ -119,10 +119,10 @@
             "description": {
                 "short": "A fictional e-commerce platform for sports and fitness equipment.",
                 "long": [
-                    "Alpha Force is a fictional online store specializing in sports gear, apparel, accessories, and dietary supplements for bodybuilding and fitness.",
-                    "Built by a team during a three-month university project, this application covers the entire software development lifecycle: requirements gathering, design, network architecture, coding, unit testing, and deployment. The main goal was to design a fully functional e-commerce site with a seamless user experience.",
-                    "On the front end, the platform offers a comprehensive customer journey. Features include user authentication, a paginated search engine with sorting and filtering, cart management, a wish list, order history, and a system for rating and reviewing purchased products.",
-                    "On the back end, a dedicated admin interface provides a comprehensive dashboard. It allows staff to manage the entire catalog (adding products, updating sizes and stock), track orders, generate promo codes, send newsletters, and monitor server resources in real time."
+                    "Alpha Force is a fictional **online store** specializing in sports gear, apparel, accessories, and dietary supplements for bodybuilding and fitness.",
+                    "Built by a team during a three-month university project, this application covers the **entire software development lifecycle**: requirements gathering, design, network architecture, coding, unit testing, and deployment. The main goal was to design a fully functional e-commerce site with a seamless user experience.",
+                    "On the front end, the platform offers a **comprehensive customer journey**. Features include user authentication, a paginated search engine with sorting and filtering, cart management, a wish list, order history, and a system for rating and reviewing purchased products.",
+                    "On the back end, a dedicated admin interface provides a **comprehensive dashboard**. It allows staff to manage the entire catalog (adding products, updating sizes and stock), track orders, generate promo codes, send newsletters, and monitor server resources in real time."
                 ]
             },
             "image": "images/alphaforce/main.jpg",
@@ -153,8 +153,8 @@
             "description": {
                 "short": "A responsive showcase website highlighting a local plant nursery's product catalog.",
                 "long": [
-                    "\"Le Jardin des Oiseaux\" is a local plant nursery with a vast product catalog. The goal of this project was to build a showcase website that reflects the company's brand, highlighting both their landscaping expertise and the wide variety of items they offer.",
-                    "To achieve this, the site features a complete item catalog, a photo gallery of the nursery's past landscaping projects, and a vertical timeline detailing the company's history. The website is fully responsive, ensuring a smooth user experience across all devices."
+                    "\"Le Jardin des Oiseaux\" is a local plant nursery with a vast product catalog. The goal of this project was to build a **showcase website** that reflects the company's brand, highlighting both their landscaping expertise and the wide variety of items they offer.",
+                    "To achieve this, the site features a complete **item catalog**, a **photo gallery** of the nursery's past landscaping projects, and a vertical timeline detailing the company's history. The website is **fully responsive**, ensuring a smooth user experience across all devices."
                 ]
             },
             "image": "images/ljdo/main.jpg",
