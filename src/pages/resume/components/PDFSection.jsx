@@ -25,7 +25,7 @@ export default function PDFSection({ title, children }) {
     const baseUrl = import.meta.env.BASE_URL;
 
     return (
-        <View>
+        <View wrap={false}>
             {title && (
                 <View style={localStyles.title}>
                     <Image style={[localStyles.slash]} src={`${baseUrl}icons/slash.svg`} />

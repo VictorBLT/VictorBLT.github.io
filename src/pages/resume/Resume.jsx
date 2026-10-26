@@ -1,11 +1,10 @@
-import { Document, Font, Page } from '@react-pdf/renderer';
+import { Document, Font } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 Font.registerHyphenationCallback((word) => [word]);
 
 import ResumeEN from './ResumeEN.jsx';
 import ResumeFR from './ResumeFR.jsx';
-import styles from './ResumeStyle.jsx';
 
 export default function Resume() {
     const { i18n, t } = useTranslation();
@@ -27,9 +26,7 @@ export default function Resume() {
             author={t('name')}
             creator={t('name')}
             producer={'Portfolio'}>
-            <Page size="A4" style={styles.page}>
-                {renderResume()}
-            </Page>
+            {renderResume()}
         </Document>
     );
 }

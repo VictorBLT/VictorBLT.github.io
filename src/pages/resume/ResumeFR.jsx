@@ -1,4 +1,4 @@
-import { Image, Link, Text, View } from '@react-pdf/renderer';
+import { Image, Link, Page, Text, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 import profilePic from '../../../public/images/vic.png';
@@ -19,7 +19,7 @@ export default function ResumeFR() {
     const projects = t('resume.projects.items', { returnObjects: true });
 
     return (
-        <>
+        <Page size="A4" style={[styles.page, styles.page]}>
             <View style={[styles.section, styles.sidebar]}>
                 <View style={styles.imgContainer}>
                     <View style={styles.circleBackground} />
@@ -102,6 +102,6 @@ export default function ResumeFR() {
                         ))}
                 </PDFSection>
             </View>
-        </>
+        </Page>
     );
 }

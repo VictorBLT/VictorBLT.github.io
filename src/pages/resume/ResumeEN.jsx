@@ -1,4 +1,4 @@
-import { Link, Text, View } from '@react-pdf/renderer';
+import { Link, Page, Text, View } from '@react-pdf/renderer';
 import { useTranslation } from 'react-i18next';
 
 import PDFItemList from './components/PDFItemList.jsx';
@@ -16,7 +16,7 @@ export default function ResumeEN() {
     const projects = t('resume.projects.items', { returnObjects: true });
 
     return (
-        <View style={[styles.section]}>
+        <Page size="A4" style={[styles.section]}>
             <View style={styles.header}>
                 <View>
                     <Text style={[styles.h1, styles.titleText]}>{t('name')}</Text>
@@ -76,6 +76,6 @@ export default function ResumeEN() {
                         ))}
                 </View>
             </PDFSection>
-        </View>
+        </Page>
     );
 }
