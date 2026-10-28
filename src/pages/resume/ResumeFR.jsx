@@ -38,21 +38,11 @@ export default function ResumeFR() {
                     </Link>
                     <PDFItemList src={'icons/car.svg'} text={t('resume.profile.driver')} />
                 </PDFSection>
-                <PDFSection title={t('resume.projects.title')}>
-                    <View style={[styles.h4, styles.projectsContainer]}>
-                        {projects.length > 0 &&
-                            projects.map((project, index) => (
-                                <View key={index}>
-                                    <Text style={[styles.h2, styles.projectName]}>
-                                        {project.name}
-                                    </Text>
-                                    <PDFMarkdown
-                                        style={[styles.p, styles.description]}
-                                        text={project.description}
-                                    />
-                                </View>
-                            ))}
-                    </View>
+                <PDFSection title={t('skills.title.resume')}>
+                    <PDFSkills
+                        skills={skills}
+                        layout="cols"
+                    />
                 </PDFSection>
                 <PDFSection title={t('resume.languages.title')}>
                     {languages.length > 0 &&
@@ -88,9 +78,6 @@ export default function ResumeFR() {
                             />
                         ))}
                 </PDFSection>
-                <PDFSection title={t('skills.title.resume')}>
-                    <PDFSkills skills={skills} />
-                </PDFSection>
                 <PDFSection title={t('education.title.resume')}>
                     {education.length > 0 &&
                         education.map((event, index) => (
@@ -101,6 +88,23 @@ export default function ResumeFR() {
                             />
                         ))}
                 </PDFSection>
+                <PDFSection title={t('resume.projects.title')}>
+                    <View style={[styles.h4, styles.projectsContainer]}>
+                        {projects.length > 0 &&
+                            projects.map((project, index) => (
+                                <View key={index}>
+                                    <Text style={[styles.h2, styles.projectName]}>
+                                        {project.name}
+                                    </Text>
+                                    <PDFMarkdown
+                                        style={[styles.p, styles.description]}
+                                        text={project.description}
+                                    />
+                                </View>
+                            ))}
+                    </View>
+                </PDFSection>
+
             </View>
         </Page>
     );
