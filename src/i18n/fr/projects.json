@@ -22,7 +22,10 @@
             },
             "image": "images/datarider/main.jpg",
             "banner": "images/datarider/main.jpg",
-            "gallery": ["images/datarider/main.jpg"],
+            "gallery": [
+                "images/datarider/main.jpg",
+                "images/datarider/datarider_1.jpg"
+            ],
             "skills": [
                 { "name": "Scala", "icon": "icons/scala.svg" },
                 { "name": "Spark", "icon": "icons/spark.svg" },
